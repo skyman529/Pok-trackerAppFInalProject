@@ -1,2 +1,2 @@
-# Pok-trackerAppFInalProject
+# PoketrackerApp
 Poké tracker ap
