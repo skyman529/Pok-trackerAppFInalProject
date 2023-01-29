@@ -3,8 +3,10 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 const bcrypt = require('bcrypt');
 const Order = require('./Order');
+const pokeSchema = require("./Poke");
 
-const userSchema = new Schema({
+const userSchema = new Schema(
+  {
   firstName: {
     type: String,
     required: true,
@@ -25,8 +27,20 @@ const userSchema = new Schema({
     required: true,
     minlength: 5
   },
-  orders: [Order.schema]
-});
+  currentPoke: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: "Poke",
+    },
+  ],
+},
+// set this to use virtual below
+{
+  toJSON: {
+    virtuals: true,
+  },
+}
+);
 
 // set up pre-save middleware to create password
 userSchema.pre('save', async function(next) {
