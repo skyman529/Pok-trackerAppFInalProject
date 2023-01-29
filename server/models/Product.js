@@ -1,36 +1,34 @@
-const mongoose = require('mongoose');
+const { Schema, model } = require("mongoose");
 
-const { Schema } = mongoose;
-
-const productSchema = new Schema({
-  name: {
-    type: String,
-    required: true,
-    trim: true
+const pokeSchema = new Schema(
+  {
+    id: {
+      type: String,
+      required: true,
+    },
+    name: {
+      type: String,
+      required: true,
+    },
+    type: {
+      type: String,
+      required: true,
+    },
+    base: {
+      type: Number,
+      required: true,
+    },
+    shiny: {
+      type: Boolean,
+    },
   },
-  description: {
-    type: String
-  },
-  image: {
-    type: String
-  },
-  price: {
-    type: Number,
-    required: true,
-    min: 0.99
-  },
-  quantity: {
-    type: Number,
-    min: 0,
-    default: 0
-  },
-  category: {
-    type: Schema.Types.ObjectId,
-    ref: 'Category',
-    required: true
+  {
+    toJSON: {
+      virtuals: true,
+    },
   }
-});
+);
 
-const Product = mongoose.model('Product', productSchema);
+const Poke = model("Poke", pokeSchema);
 
-module.exports = Product;
+module.exports = Poke;
