@@ -27,6 +27,7 @@ const userSchema = new Schema(
     required: true,
     minlength: 5
   },
+  orders: [Order.schema],
   currentPoke: [
     {
       type: Schema.Types.ObjectId,
