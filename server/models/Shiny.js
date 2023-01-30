@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const { Schema } = mongoose;
 
-const categorySchema = new Schema({
+const shinySchema = new Schema({
   name: {
     type: String,
     required: true,
@@ -10,6 +10,6 @@ const categorySchema = new Schema({
   }
 });
 
-const Category = mongoose.model('Category', categorySchema);
+const Shiny = mongoose.model('Shiny', shinySchema);
 
-module.exports = Category;
+module.exports = Shiny;
