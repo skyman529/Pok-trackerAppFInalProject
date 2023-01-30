@@ -3,7 +3,7 @@ const { Schema, model } = require("mongoose");
 const pokeSchema = new Schema(
   {
     id: {
-      type: String,
+      type: Number,
       required: true,
     },
     name: {
@@ -15,7 +15,7 @@ const pokeSchema = new Schema(
       required: true,
     },
     base: {
-      type: Number,
+      type: String,
       required: true,
     },
     shiny: {
