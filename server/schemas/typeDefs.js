@@ -1,40 +1,60 @@
-const { gql } = require("apollo-server-express");
+const { gql } = require('apollo-server-express');
 
 const typeDefs = gql`
-  type User {
-    id: ID!
-    name: String!
-    email: String!
-    currentpoke: [Poke]
+  type Shiny {
+    _id: ID
+    name: String
   }
+
   type Poke {
-    id: ID!
-    Name: String!
-    type: String!
-    base: String!
-    shiny: Boolean!
+    _id: ID
+    name: String
+    description: String
+    image: String
+    quantity: Int
+    price: Float
+    shiny: Shiny
   }
+
+  type Order {
+    _id: ID
+    purchaseDate: String
+    poke: [Poke]
+  }
+
+  type User {
+    _id: ID
+    firstName: String
+    lastName: String
+    email: String
+    orders: [Order]
+  }
+
+  type Checkout {
+    session: ID
+  }
+
   type Auth {
     token: ID
     user: User
   }
+
   type Query {
-    me: User
-    poke: [Poke]
-    singlePoke(pokeId: ID!): Poke
+    shinies: [Shiny]
+    pokes(shiny: ID, name: String): [Poke]
+    poke(_id: ID!): Poke
+    user: User
+    order(_id: ID!): Order
+    checkout(pokes: [ID]!): Checkout
   }
-  input PokeInput {
-    Name: String!
-    type: String!
-    base: String!
-    shiny: Boolean!
-  }
+
   type Mutation {
-    addUser(username: String!, email: String!, password: String!): Auth
+    addUser(firstName: String!, lastName: String!, email: String!, password: String!): Auth
+    addOrder(pokes: [ID]!): Order
+    updateUser(firstName: String, lastName: String, email: String, password: String): User
+    updatePoke(_id: ID!, quantity: Int!): Poke
     login(email: String!, password: String!): Auth
-    addPoke(poke: PokeInput): Poke
-    updatePoke(pokeId: ID!, pokeData: PokeInput): Poke
-    removePoke(pokeId: ID): User
   }
 `;
+
 module.exports = typeDefs;
