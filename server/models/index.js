@@ -1,6 +1,4 @@
 const User = require('./User');
-const Poke = require('./Poke');
-const Shiny = require('./Shiny');
-const Order = require('./Order');
+const Thought = require('./Thought');
 
-module.exports = { User, Poke, Shiny, Order };
+module.exports = { User, Thought };

@@ -1,59 +1,49 @@
 const { gql } = require('apollo-server-express');
 
 const typeDefs = gql`
-  type Shiny {
-    _id: ID
-    name: String
-  }
-
-  type Poke {
-    _id: ID
-    name: String
-    description: String
-    image: String
-    quantity: Int
-    price: Float
-    shiny: Shiny
-  }
-
-  type Order {
-    _id: ID
-    purchaseDate: String
-    poke: [Poke]
-  }
-
   type User {
     _id: ID
-    firstName: String
-    lastName: String
+    username: String
     email: String
-    orders: [Order]
+    password: String
+    thoughts: [Thought]!
   }
 
-  type Checkout {
-    session: ID
+  type Thought {
+    _id: ID
+    thoughtText: String
+    thoughtAuthor: String
+    createdAt: String
+    comments: [Comment]!
+  }
+
+  type Comment {
+    _id: ID
+    commentText: String
+    commentAuthor: String
+    createdAt: String
   }
 
   type Auth {
-    token: ID
+    token: ID!
     user: User
   }
 
   type Query {
-    shinies: [Shiny]
-    pokes(shiny: ID, name: String): [Poke]
-    poke(_id: ID!): Poke
-    user: User
-    order(_id: ID!): Order
-    checkout(pokes: [ID]!): Checkout
+    users: [User]
+    user(username: String!): User
+    thoughts(username: String): [Thought]
+    thought(thoughtId: ID!): Thought
+    me: User
   }
 
   type Mutation {
-    addUser(firstName: String!, lastName: String!, email: String!, password: String!): Auth
-    addOrder(pokes: [ID]!): Order
-    updateUser(firstName: String, lastName: String, email: String, password: String): User
-    updatePoke(_id: ID!, quantity: Int!): Poke
+    addUser(username: String!, email: String!, password: String!): Auth
     login(email: String!, password: String!): Auth
+    addThought(thoughtText: String!): Thought
+    addComment(thoughtId: ID!, commentText: String!): Thought
+    removeThought(thoughtId: ID!): Thought
+    removeComment(thoughtId: ID!, commentId: ID!): Thought
   }
 `;
 
