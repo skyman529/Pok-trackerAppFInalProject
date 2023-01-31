@@ -5,6 +5,39 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+
+ @font-face {
+  font-family: "Light";   /*Can be any text*/
+  src: local("Pokemon-Solid"),
+    url("./fonts/Pokemon-Solid.ttf") format("truetype");
+}
+
+#title {
+  font-family: 'Pokemon Solid', sans-serif;
+  font-weight:light;
+  font-size: 40px ;
+}
+
+#header {
+  height: 350px;
+}
+
+#pokeball {
+  width: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 html {
   line-height: 1.15;
   /* 1 */
@@ -1706,3 +1739,5 @@ label form [type='radio'] {
     align-content: center;
   }
 }
+
+
