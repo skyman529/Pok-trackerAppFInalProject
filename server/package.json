@@ -1,7 +1,7 @@
 {
-  "name": "mern-server",
+  "name": "PoketrackerApp",
   "version": "1.0.0",
-  "description": "",
+  "description": "Track your pokes and their shiny status",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -9,7 +9,7 @@
     "seed": "node config/seeds.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Cassidy Younggreen, Eugene Isingizwe, Faith Vaz, Ryan Younggreen, Tim Hannan and Skylar Martin",
   "license": "ISC",
   "dependencies": {
     "apollo-server-express": "^3.6.1",
