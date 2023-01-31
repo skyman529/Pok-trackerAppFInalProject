@@ -1,8 +1,8 @@
 import React from 'react';
 import { useQuery } from '@apollo/client';
 
-import ThoughtList from '../components/PokeList';
-import ThoughtForm from '../components/Poke';
+import ThoughtList from '../components/PokeAddList';
+import ThoughtForm from '../components/PokeAdd';
 
 import { QUERY_THOUGHTS } from '../utils/queries';
 
