@@ -32,10 +32,7 @@ export const ADD_POKE = gql`
       type
       imgage
       shiny
-      user {
-        _id
-        username
-      }
+      pokeUser
     }
   }
 `;
