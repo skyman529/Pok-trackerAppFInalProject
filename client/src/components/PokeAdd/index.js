@@ -3,6 +3,17 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
+//import from Badge component -Faith
+import Badges from '../Badges';
+
+//import from Bootstrap -Faith
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
+
+//import from css -Faith
+import './style.css';
 
 import { ADD_THOUGHT } from '../../utils/mutations';
 import { QUERY_THOUGHTS, QUERY_ME } from '../../utils/queries';
