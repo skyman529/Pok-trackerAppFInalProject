@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import pokemon from '../Header/pokemon1.png'
 
 import Auth from '../../utils/auth';
 
@@ -9,13 +10,13 @@ const Header = () => {
     Auth.logout();
   };
   return (
-    <header className="bg-primary text-light mb-4 py-3 flex-row align-center">
+    <header className="bg-primary text-light mb-4 py-3 flex-row align-center" id='header'>
       <div className="container flex-row justify-space-between-lg justify-center align-center">
         <div>
-          <Link className="text-light" to="/">
-            <h1 className="m-0">Tech Thoughts</h1>
-          </Link>
-          <p className="m-0">Get into the mind of a programmer.</p>
+            <h1 className="m-0" id='pokeball'>
+              <img src={pokemon} alt="Pokemon Logo"/>
+            </h1>
+          <p className="m-0" id="title">Track Your Collection and Catch Em All!</p>
         </div>
         <div>
           {Auth.loggedIn() ? (
