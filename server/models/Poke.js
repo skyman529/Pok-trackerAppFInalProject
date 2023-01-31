@@ -26,7 +26,7 @@ const pokeSchema = new Schema({
   },
   category: {
     type: Schema.Types.ObjectId,
-    ref: 'Category',
+    ref: 'Shiny',
     required: true
   }
 });
