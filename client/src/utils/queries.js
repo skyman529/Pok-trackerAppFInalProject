@@ -26,23 +26,18 @@ export const QUERY_ALL_POKES = gql`
   }
 `;
 
-//Will query all pokes on User pofile that they've saved (data labels may change!) -Faith 
-export const QUERY_SINGLE_THOUGHT = gql`
-  query getSingleThought($thoughtId: ID!) {
-    thought(thoughtId: $thoughtId) {
+//Will query one poke to choose from (data labels may change and we could add more data to this!!) -Faith 
+export const QUERY_SINGLE_POKE = gql`
+  query getSinglePoke($pokeId: ID!) {
+    poke(pokeId: $pokeId) {
       _id
-      thoughtText
-      thoughtAuthor
-      createdAt
-      comments {
-        _id
-        commentText
-        commentAuthor
-        createdAt
-      }
+      type
+      imgage
     }
   }
 `;
+
+//Will query all pokes on User pofile that they've saved (data labels may change!) -Faith 
 
 export const QUERY_ME = gql`
   query me {
