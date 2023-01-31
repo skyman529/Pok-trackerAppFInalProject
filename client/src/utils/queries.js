@@ -18,7 +18,7 @@ export const QUERY_USER = gql`
 //Will query all pokes to choose from (data labels may change!) -Faith 
 export const QUERY_ALL_POKES = gql`
   query getThoughts {
-    thoughts {
+    pokes {
       _id
       type
       imgage
@@ -38,18 +38,18 @@ export const QUERY_SINGLE_POKE = gql`
 `;
 
 //Will query all pokes on User pofile that they've saved (data labels may change!) -Faith 
-
 export const QUERY_ME = gql`
   query me {
     me {
       _id
       username
       email
-      thoughts {
+      pokes {
         _id
-        thoughtText
-        thoughtAuthor
-        createdAt
+        type
+        imgage
+        shiny
+        pokeUser
       }
     }
   }
