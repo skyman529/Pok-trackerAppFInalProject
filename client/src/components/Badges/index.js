@@ -1,3 +1,4 @@
+//This is to render the types badges -Faith
 import React from 'react';
 import Badge from 'react-bootstrap/Badge';
 
