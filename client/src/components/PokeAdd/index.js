@@ -1,3 +1,5 @@
+//This component is to render the Poke Cards to add (data labels may change!) -Faith
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/client';

@@ -1,3 +1,5 @@
+//This component is to render the Poke Cards List to add (data labels may change!) -Faith
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 
