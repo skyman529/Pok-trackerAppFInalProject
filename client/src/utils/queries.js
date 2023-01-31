@@ -1,15 +1,17 @@
 import { gql } from '@apollo/client';
 
+//Will query all pokes of the other User profiles that they've saved (data labels may change!) -Faith 
 export const QUERY_USER = gql`
   query user($username: String!) {
     user(username: $username) {
       _id
       username
       email
-      thoughts {
+      pokes {
         _id
-        thoughtText
-        createdAt
+        type
+        imgage
+        shiny
       }
     }
   }
@@ -37,7 +39,7 @@ export const QUERY_SINGLE_POKE = gql`
   }
 `;
 
-//Will query all pokes on User pofile that they've saved (data labels may change!) -Faith 
+//Will query all pokes of the current User profile that they've saved (data labels may change!) -Faith 
 export const QUERY_ME = gql`
   query me {
     me {
@@ -49,7 +51,6 @@ export const QUERY_ME = gql`
         type
         imgage
         shiny
-        pokeUser
       }
     }
   }
