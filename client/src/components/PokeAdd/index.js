@@ -80,8 +80,8 @@ const PokemonCard = () => {
                 <Card style={{ width: '18rem' }}>
                   {/* <Card.Img variant="top" src={} alt="example" /> */}
                   <Card.Body>
-                    <Card.Text  id='pokeCard'>id</Card.Text>
-                    <Card.Title  id='pokeCard'>name</Card.Title>
+                    <Card.Text  id='pokeCard'>{data._id}</Card.Text>
+                    <Card.Title  id='pokeCard'>{data.name}</Card.Title>
                     <Badges />
                     <Form>
                 <Form.Check
