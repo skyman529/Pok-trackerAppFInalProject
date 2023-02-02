@@ -13,10 +13,10 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 
 //import from css -Faith
-import './style.css';
+// import './style.css';
 
 import { ADD_POKE } from '../../utils/mutations';
-import { QUERY_POKES, QUERY_ME } from '../../utils/queries';
+import { QUERY_SINGLE_POKE, QUERY_ME, QUERY_ALL_POKES } from '../../utils/queries';
 
 import Auth from '../../utils/auth';
 
@@ -25,13 +25,13 @@ const ThoughtForm = () => {
 
   const [characterCount, setCharacterCount] = useState(0);
 
-  const [addThought, { error }] = useMutation(ADD_THOUGHT, {
+  const [addThought, { error }] = useMutation(ADD_POKE, {
     update(cache, { data: { addThought } }) {
       try {
-        const { thoughts } = cache.readQuery({ query: QUERY_THOUGHTS });
+        const { thoughts } = cache.readQuery({ query: QUERY_ALL_POKES });
 
         cache.writeQuery({
-          query: QUERY_THOUGHTS,
+          query: QUERY_ALL_POKES,
           data: { thoughts: [addThought, ...thoughts] },
         });
       } catch (e) {
@@ -81,13 +81,13 @@ const ThoughtForm = () => {
             {Array.from({ length: 4 }).map((_, idx) => (
               <Col md="3">
                 <Card style={{ width: '18rem' }}>
-                  <Card.Img variant="top" src={example} alt="example" />
+                  {/* <Card.Img variant="top" src={} alt="example" /> */}
                   <Card.Body>
-                    <Card.Text>Number</Card.Text>
-                    <Card.Title>Pikachu</Card.Title>
+                    <Card.Text  id='pokeCard'>Number</Card.Text>
+                    <Card.Title  id='pokeCard'>Pikachu</Card.Title>
                     <Badges />
                     <br></br>
-                    <Button variant="primary">Add Pokemon</Button>
+                    <Button variant="primary"  id='pokeCard'>Add Pokemon</Button>
                   </Card.Body>
                 </Card>
               </Col>

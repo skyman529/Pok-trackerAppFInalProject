@@ -26,7 +26,11 @@
   width: 300px;
 }
 
-
+#pokeCard {
+  font-family: 'Pokemon Solid', sans-serif;
+  font-weight:light;
+  font-size: 20px ;
+}
 
 
 
