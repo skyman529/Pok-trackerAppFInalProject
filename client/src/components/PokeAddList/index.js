@@ -23,23 +23,23 @@ const PokemonList = ({
               {showUsername ? (
                 <Link
                   className="text-light"
-                  to={`/profiles/${pokemon.thoughtAuthor}`}
+                  to={`/profiles/${pokemon.thoughtAuthor}`} /*HOW DO WE CHANGE THIS?*/
                 >
                   {pokemon.thoughtAuthor} <br />
                   <span style={{ fontSize: '1rem' }}>
-                    had this pokemon on {pokemon.createdAt}
+                    had this pokemon on {pokemon.addedAt}
                   </span>
                 </Link>
               ) : (
                 <>
                   <span style={{ fontSize: '1rem' }}>
-                    You had this pokemon on {pokemon.createdAt}
+                    You had this pokemon on {pokemon.addedAt}
                   </span>
                 </>
               )}
             </h4>
             <div className="card-body bg-light p-2">
-              <p>{pokemon.thoughtText}</p>
+              <p>{pokemon.name}</p>
             </div>
             <Link
               className="btn btn-primary btn-block btn-squared"
