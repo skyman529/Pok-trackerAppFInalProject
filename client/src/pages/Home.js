@@ -4,11 +4,11 @@ import { useQuery } from '@apollo/client';
 import ThoughtList from '../components/PokeAddList';
 import ThoughtForm from '../components/PokeAdd';
 
-import { QUERY_THOUGHTS } from '../utils/queries';
+import { QUERY_ALL_POKES } from '../utils/queries';
 
 const Home = () => {
-  const { loading, data } = useQuery(QUERY_THOUGHTS);
-  const thoughts = data?.thoughts || [];
+  const { loading, data } = useQuery(QUERY_ALL_POKES);
+  const pokemon = data?.pokemon || [];
 
   return (
     <main>

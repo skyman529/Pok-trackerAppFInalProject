@@ -9,8 +9,9 @@ export const QUERY_USER = gql`
       email
       pokes {
         _id
+        name
         type
-        imgage
+        image
         shiny
       }
     }
@@ -19,11 +20,12 @@ export const QUERY_USER = gql`
 
 //Will query all pokes to choose from (data labels may change!) -Faith 
 export const QUERY_ALL_POKES = gql`
-  query getThoughts {
+  query getPokes {
     pokes {
       _id
+      name
       type
-      imgage
+      image
     }
   }
 `;
@@ -33,8 +35,9 @@ export const QUERY_SINGLE_POKE = gql`
   query getSinglePoke($pokeId: ID!) {
     poke(pokeId: $pokeId) {
       _id
+      name
       type
-      imgage
+      image
     }
   }
 `;
@@ -48,8 +51,9 @@ export const QUERY_ME = gql`
       email
       pokes {
         _id
+        name
         type
-        imgage
+        image
         shiny
       }
     }
