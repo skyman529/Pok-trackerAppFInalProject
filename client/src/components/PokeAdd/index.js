@@ -11,6 +11,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import Form from 'react-bootstrap/Form';
 
 //import from css -Faith
 // import './style.css';
@@ -86,6 +87,13 @@ const ThoughtForm = () => {
                     <Card.Text  id='pokeCard'>Number</Card.Text>
                     <Card.Title  id='pokeCard'>Pikachu</Card.Title>
                     <Badges />
+                    <Form>
+                <Form.Check
+                  type="switch"
+                  id="custom-switch"
+                  label="Shiny"
+                />
+              </Form>
                     <br></br>
                     <Button variant="primary"  id='pokeCard'>Add Pokemon</Button>
                   </Card.Body>
