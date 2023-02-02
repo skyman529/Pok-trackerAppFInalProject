@@ -17,7 +17,7 @@ import { QUERY_ME, QUERY_ALL_POKES } from '../../utils/queries';
 
 import Auth from '../../utils/auth';
 
-const ThoughtForm = () => {
+const PokemonCard = () => {
   const [thoughtText, setThoughtText] = useState('');
 
   const [setCharacterCount] = useState(0);
@@ -108,4 +108,4 @@ const ThoughtForm = () => {
   );
 };
 
-export default ThoughtForm;
+export default PokemonCard;

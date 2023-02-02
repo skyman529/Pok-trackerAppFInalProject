@@ -3,7 +3,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const ThoughtList = ({
+const PokemonList = ({
   pokemons,
   title,
   showTitle = true,
@@ -53,4 +53,4 @@ const ThoughtList = ({
   );
 };
 
-export default ThoughtList;
+export default PokemonList;
