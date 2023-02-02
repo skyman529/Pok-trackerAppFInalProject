@@ -1,59 +1,56 @@
 import { gql } from '@apollo/client';
 
+//Will query all pokes of the other User profiles that they've saved (data labels may change!) -Faith 
 export const QUERY_USER = gql`
   query user($username: String!) {
     user(username: $username) {
       _id
       username
       email
-      thoughts {
+      pokes {
         _id
-        thoughtText
-        createdAt
+        type
+        imgage
+        shiny
       }
     }
   }
 `;
 
-export const QUERY_THOUGHTS = gql`
+//Will query all pokes to choose from (data labels may change!) -Faith 
+export const QUERY_ALL_POKES = gql`
   query getThoughts {
-    thoughts {
+    pokes {
       _id
-      thoughtText
-      thoughtAuthor
-      createdAt
+      type
+      imgage
     }
   }
 `;
 
-export const QUERY_SINGLE_THOUGHT = gql`
-  query getSingleThought($thoughtId: ID!) {
-    thought(thoughtId: $thoughtId) {
+//Will query one poke to choose from (data labels may change and we could add more data to this!!) -Faith 
+export const QUERY_SINGLE_POKE = gql`
+  query getSinglePoke($pokeId: ID!) {
+    poke(pokeId: $pokeId) {
       _id
-      thoughtText
-      thoughtAuthor
-      createdAt
-      comments {
-        _id
-        commentText
-        commentAuthor
-        createdAt
-      }
+      type
+      imgage
     }
   }
 `;
 
+//Will query all pokes of the current User profile that they've saved (data labels may change!) -Faith 
 export const QUERY_ME = gql`
   query me {
     me {
       _id
       username
       email
-      thoughts {
+      pokes {
         _id
-        thoughtText
-        thoughtAuthor
-        createdAt
+        type
+        imgage
+        shiny
       }
     }
   }
