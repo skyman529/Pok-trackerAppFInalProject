@@ -28,10 +28,6 @@ export const ADD_USER = gql`
 export const ADD_POKE = gql`
   mutation addPoke($userId: ID!, $shiny: Boolean!) {
     addPoke(userId: $userId, shiny: $shiny) {
-      user {
-        _id
-        username
-        pokes {
           _id
           type
           imgage

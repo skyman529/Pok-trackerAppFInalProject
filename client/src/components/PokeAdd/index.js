@@ -21,9 +21,9 @@ import { QUERY_POKES, QUERY_ME } from '../../utils/queries';
 import Auth from '../../utils/auth';
 
 const ThoughtForm = () => {
-  const [thoughtText, setThoughtText] = useState('');
+  // const [thoughtText, setThoughtText] = useState('');
 
-  const [characterCount, setCharacterCount] = useState(0);
+  // const [characterCount, setCharacterCount] = useState(0);
 
   const [addThought, { error }] = useMutation(ADD_THOUGHT, {
     update(cache, { data: { addThought } }) {
