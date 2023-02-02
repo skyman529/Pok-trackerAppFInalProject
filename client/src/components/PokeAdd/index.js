@@ -18,9 +18,9 @@ import { QUERY_ME, QUERY_POKEMONS } from '../../utils/queries';
 import Auth from '../../utils/auth';
 
 const PokemonCard = () => {
-  const [thoughtText, setThoughtText] = useState('');
+  // const [thoughtText, setThoughtText] = useState('');
 
-  const [setCharacterCount] = useState(0);
+  // const [setCharacterCount] = useState(0);
 
   const [addPokemon] = useMutation(ADD_POKEMON, {
     update(cache, { data: { addPokemon } }) {
@@ -80,8 +80,8 @@ const PokemonCard = () => {
                 <Card style={{ width: '18rem' }}>
                   {/* <Card.Img variant="top" src={} alt="example" /> */}
                   <Card.Body>
-                    <Card.Text  id='pokeCard'>{data._id}</Card.Text>
-                    <Card.Title  id='pokeCard'>{data.name}</Card.Title>
+                    <Card.Text  id='pokeCard'>id</Card.Text>
+                    <Card.Title  id='pokeCard'>name</Card.Title>
                     <Badges />
                     <Form>
                 <Form.Check
