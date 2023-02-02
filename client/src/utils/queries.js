@@ -7,10 +7,11 @@ export const QUERY_USER = gql`
       _id
       username
       email
-      pokes {
+      pokemon {
         _id
+        name
         type
-        imgage
+        image
         shiny
       }
     }
@@ -19,22 +20,24 @@ export const QUERY_USER = gql`
 
 //Will query all pokes to choose from (data labels may change!) -Faith 
 export const QUERY_ALL_POKES = gql`
-  query getThoughts {
-    pokes {
+  query getPokes {
+    pokemon {
       _id
+      name
       type
-      imgage
+      image
     }
   }
 `;
 
 //Will query one poke to choose from (data labels may change and we could add more data to this!!) -Faith 
 export const QUERY_SINGLE_POKE = gql`
-  query getSinglePoke($pokeId: ID!) {
-    poke(pokeId: $pokeId) {
+  query getSinglePoke($pokemonId: ID!) {
+    pokemon(pokemonId: $pokemonId) {
       _id
+      name
       type
-      imgage
+      image
     }
   }
 `;
@@ -46,10 +49,11 @@ export const QUERY_ME = gql`
       _id
       username
       email
-      pokes {
+      pokemon {
         _id
+        name
         type
-        imgage
+        image
         shiny
       }
     }

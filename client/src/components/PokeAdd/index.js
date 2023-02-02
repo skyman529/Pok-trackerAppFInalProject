@@ -4,35 +4,32 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
 //import from Badge component -Faith
-import Badges from '../Badges';
+import Badges from '../Badges/index';
 
 //import from Bootstrap -Faith
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
+import {Button, Card, Col, Row, Form} from 'react-bootstrap';
 
 //import from css -Faith
 // import './style.css';
 
 import { ADD_POKE } from '../../utils/mutations';
-import { QUERY_SINGLE_POKE, QUERY_ME, QUERY_ALL_POKES } from '../../utils/queries';
+import { QUERY_ME, QUERY_ALL_POKES } from '../../utils/queries';
 
 import Auth from '../../utils/auth';
 
 const ThoughtForm = () => {
   const [thoughtText, setThoughtText] = useState('');
 
-  const [characterCount, setCharacterCount] = useState(0);
+  const [setCharacterCount] = useState(0);
 
-  const [addThought, { error }] = useMutation(ADD_POKE, {
-    update(cache, { data: { addThought } }) {
+  const [addPokemon] = useMutation(ADD_POKE, {
+    update(cache, { data: { addPokemon } }) {
       try {
-        const { thoughts } = cache.readQuery({ query: QUERY_ALL_POKES });
+        const { pokemons } = cache.readQuery({ query: QUERY_ALL_POKES });
 
         cache.writeQuery({
           query: QUERY_ALL_POKES,
-          data: { thoughts: [addThought, ...thoughts] },
+          data: { pokemons: [addPokemon, ...pokemons] },
         });
       } catch (e) {
         console.error(e);
@@ -42,36 +39,36 @@ const ThoughtForm = () => {
       const { me } = cache.readQuery({ query: QUERY_ME });
       cache.writeQuery({
         query: QUERY_ME,
-        data: { me: { ...me, thoughts: [...me.thoughts, addThought] } },
+        data: { me: { ...me, pokemons: [...me.pokemons, addPokemon] } },
       });
     },
   });
 
-  const handleFormSubmit = async (event) => {
-    event.preventDefault();
+  // const handleFormSubmit = async (event) => {
+  //   event.preventDefault();
 
-    try {
-      const { data } = await addThought({
-        variables: {
-          thoughtText,
-          thoughtAuthor: Auth.getProfile().data.username,
-        },
-      });
+  //   try {
+  //     const { data } = await addPokemon({
+  //       variables: {
+  //         thoughtText,
+  //         thoughtAuthor: Auth.getProfile().data.username,
+  //       },
+  //     });
 
-      setThoughtText('');
-    } catch (err) {
-      console.error(err);
-    }
-  };
+  //     setThoughtText('');
+  //   } catch (err) {
+  //     console.error(err);
+  //   }
+  // };
 
-  const handleChange = (event) => {
-    const { name, value } = event.target;
+  // const handleChange = (event) => {
+  //   const { name, value } = event.target;
 
-    if (name === 'thoughtText' && value.length <= 280) {
-      setThoughtText(value);
-      setCharacterCount(value.length);
-    }
-  };
+  //   if (name === 'thoughtText' && value.length <= 280) {
+  //     setThoughtText(value);
+  //     setCharacterCount(value.length);
+  //   }
+  // };
 
   return (
     <div>
@@ -86,6 +83,13 @@ const ThoughtForm = () => {
                     <Card.Text  id='pokeCard'>Number</Card.Text>
                     <Card.Title  id='pokeCard'>Pikachu</Card.Title>
                     <Badges />
+                    <Form>
+                <Form.Check
+                  type="switch"
+                  id="custom-switch"
+                  label="Shiny"
+                />
+              </Form>
                     <br></br>
                     <Button variant="primary"  id='pokeCard'>Add Pokemon</Button>
                   </Card.Body>
