@@ -8,7 +8,6 @@ import CommentList from '../components/CommentList';
 import CommentForm from '../components/CommentForm';
 
 import { QUERY_SINGLE_POKE } from '../utils/queries';
-import { SingleFieldSubscriptionsRule } from 'graphql';
 
 const SinglePoke = () => {
   // Use `useParams()` to retrieve value of the route parameter `:profileId`
