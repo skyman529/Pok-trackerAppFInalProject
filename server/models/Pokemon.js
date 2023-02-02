@@ -1,20 +1,28 @@
 const { Schema, model } = require('mongoose');
 const dateFormat = require('../utils/dateFormat');
 
-const thoughtSchema = new Schema({
-  thoughtText: {
-    type: String,
-    required: 'You need to leave a thought!',
-    minlength: 1,
-    maxlength: 280,
-    trim: true,
+const pokemonSchema = new Schema({
+  _id: {
+    type: Number,
+    required: true,
   },
-  thoughtAuthor: {
+  name: {
     type: String,
     required: true,
     trim: true,
   },
-  createdAt: {
+  type: {
+    type: String,
+
+  },
+  image: {
+    type: String,
+  },
+  shiny: {
+    type: Boolean,
+    required: true,
+  },
+  addedAt: {
     type: Date,
     default: Date.now,
     get: (timestamp) => dateFormat(timestamp),
@@ -40,6 +48,6 @@ const thoughtSchema = new Schema({
   ],
 });
 
-const Thought = model('Thought', thoughtSchema);
+const Pokemon = model('Pokemon', pokemonSchema);
 
-module.exports = Thought;
+module.exports = Pokemon;

@@ -9,16 +9,16 @@ import CommentForm from '../components/CommentForm';
 
 import { QUERY_SINGLE_POKE } from '../utils/queries';
 
-const SingleThought = () => {
+const SinglePoke = () => {
   // Use `useParams()` to retrieve value of the route parameter `:profileId`
-  const { thoughtId } = useParams();
+  const { pokeID } = useParams();
 
   const { loading, data } = useQuery(QUERY_SINGLE_POKE, {
     // pass URL parameter
-    variables: { thoughtId: thoughtId },
+    variables: { pokeID: pokeID },
   });
 
-  const thought = data?.thought || {};
+  const pokemon = data?.pokemon || {};
 
   if (loading) {
     return <div>Loading...</div>;
@@ -26,9 +26,9 @@ const SingleThought = () => {
   return (
     <div className="my-3">
       <h3 className="card-header bg-dark text-light p-2 m-0">
-        {thought.thoughtAuthor} <br />
+        {pokemon._id} <br />
         <span style={{ fontSize: '1rem' }}>
-          had this thought on {thought.createdAt}
+          had this thought on {pokemon.addedAt}
         </span>
       </h3>
       <div className="bg-light py-4">
@@ -41,7 +41,7 @@ const SingleThought = () => {
             lineHeight: '1.5',
           }}
         >
-          {thought.thoughtText}
+          {pokemon.name}
         </blockquote>
       </div>
 
@@ -55,4 +55,4 @@ const SingleThought = () => {
   );
 };
 
-export default SingleThought;
+export default SinglePoke;
