@@ -70,7 +70,7 @@ function App() {
                 element={<Profile />}
               />
               <Route 
-                path="/thoughts/:thoughtId"
+                path="/pokemons/:pokemonId"
                 element={<SingleThought />}
               />
             </Routes>

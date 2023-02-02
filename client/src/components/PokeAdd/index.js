@@ -4,73 +4,69 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
 //import from Badge component -Faith
-import Badges from '../Badges';
+import Badges from '../Badges/index';
 
 //import from Bootstrap -Faith
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
-import Form from 'react-bootstrap/Form';
+import {Button, Card, Col, Row, Form} from 'react-bootstrap';
 
 //import from css -Faith
 // import './style.css';
 
 import { ADD_POKE } from '../../utils/mutations';
-import { QUERY_SINGLE_POKE, QUERY_ME, QUERY_ALL_POKES } from '../../utils/queries';
+import { QUERY_ME, QUERY_ALL_POKES } from '../../utils/queries';
 
 import Auth from '../../utils/auth';
 
 const ThoughtForm = () => {
- //  const [thoughtText, setThoughtText] = useState('');
-// 
-  // const [characterCount, setCharacterCount] = useState(0);
-// 
- //  const [addThought, { error }] = useMutation(ADD_THOUGHT, {
- //    update(cache, { data: { addThought } }) {
- //      try {
-  //       const { thoughts } = cache.readQuery({ query: QUERY_THOUGHTS });
-// 
- //        cache.writeQuery({
- //          query: QUERY_THOUGHTS,
- //          data: { thoughts: [addThought, ...thoughts] },
- //        });
- //      } catch (e) {// 
- //        console.error(e);
- //      }
-// 
- //      // update me object's cache
- //      const { me } = cache.readQuery({ query: QUERY_ME });
- //      cache.writeQuery({// 
-  //       query: QUERY_ME,
-  //       data: { me: { ...me, thoughts: [...me.thoughts, addThought] } },
- //      });
- //    },
- //  });
-// 
- //  const handleFormSubmit = async (event) => {// 
- //    event.preventDefault();
-// 
- //    try {
- //      const { data } = await addThought({
- //        variables: {
- //          thoughtText,
- //          thoughtAuthor: Auth.getProfile().data.username,
- //        },
- //      });
-// 
- //      setThoughtText('');
- //    } catch (err) {
- //      console.error(err);
- //    }
- //  };
-// 
- //  const handleChange = (event) => {// 
+  const [thoughtText, setThoughtText] = useState('');
+
+  const [setCharacterCount] = useState(0);
+
+  const [addPokemon] = useMutation(ADD_POKE, {
+    update(cache, { data: { addPokemon } }) {
+      try {
+        const { pokemons } = cache.readQuery({ query: QUERY_ALL_POKES });
+
+        cache.writeQuery({
+          query: QUERY_ALL_POKES,
+          data: { pokemons: [addPokemon, ...pokemons] },
+        });
+      } catch (e) {
+        console.error(e);
+      }
+
+      // update me object's cache
+      const { me } = cache.readQuery({ query: QUERY_ME });
+      cache.writeQuery({
+        query: QUERY_ME,
+        data: { me: { ...me, pokemons: [...me.pokemons, addPokemon] } },
+      });
+    },
+  });
+
+  // const handleFormSubmit = async (event) => {
+  //   event.preventDefault();
+
+  //   try {
+  //     const { data } = await addPokemon({
+  //       variables: {
+  //         thoughtText,
+  //         thoughtAuthor: Auth.getProfile().data.username,
+  //       },
+  //     });
+
+  //     setThoughtText('');
+  //   } catch (err) {
+  //     console.error(err);
+  //   }
+  // };
+
+  // const handleChange = (event) => {
   //   const { name, value } = event.target;
-// 
-   //  if (name === 'thoughtText' && value.length <= 280) {
-   //    setThoughtText(value);
-   //    setCharacterCount(value.length);
+
+  //   if (name === 'thoughtText' && value.length <= 280) {
+  //     setThoughtText(value);
+  //     setCharacterCount(value.length);
   //   }
   // };
 
