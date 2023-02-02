@@ -86,6 +86,13 @@ const ThoughtForm = () => {
                     <Card.Text>Number</Card.Text>
                     <Card.Title>Pikachu</Card.Title>
                     <Badges />
+                    <Form>
+                <Form.Check
+                  type="switch"
+                  id="custom-switch"
+                  label="Shiny"
+                />
+              </Form>
                     <br></br>
                     <Button variant="primary">Add Pokemon</Button>
                   </Card.Body>
