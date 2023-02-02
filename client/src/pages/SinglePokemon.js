@@ -7,15 +7,15 @@ import { useQuery } from '@apollo/client';
 import CommentList from '../components/CommentList';
 import CommentForm from '../components/CommentForm';
 
-import { QUERY_SINGLE_POKE } from '../utils/queries';
+import { QUERY_SINGLE_POKEMON } from '../utils/queries';
 
 const SinglePoke = () => {
   // Use `useParams()` to retrieve value of the route parameter `:profileId`
-  const { pokeID } = useParams();
+  const { pokemonId } = useParams();
 
-  const { loading, data } = useQuery(QUERY_SINGLE_POKE, {
+  const { loading, data } = useQuery(QUERY_SINGLE_POKEMON, {
     // pass URL parameter
-    variables: { pokeID: pokeID },
+    variables: { pokemonId: pokemonId },
   });
 
   const pokemon = data?.pokemon || {};
