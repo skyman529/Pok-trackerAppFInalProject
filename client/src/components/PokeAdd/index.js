@@ -21,71 +21,18 @@ import { QUERY_SINGLE_POKE, QUERY_ME, QUERY_ALL_POKES } from '../../utils/querie
 import Auth from '../../utils/auth';
 
 const ThoughtForm = () => {
-<<<<<<< HEAD
- //  const [thoughtText, setThoughtText] = useState('');
-// 
-  // const [characterCount, setCharacterCount] = useState(0);
-// 
- //  const [addThought, { error }] = useMutation(ADD_THOUGHT, {
- //    update(cache, { data: { addThought } }) {
- //      try {
-  //       const { thoughts } = cache.readQuery({ query: QUERY_THOUGHTS });
-// 
- //        cache.writeQuery({
- //          query: QUERY_THOUGHTS,
- //          data: { thoughts: [addThought, ...thoughts] },
- //        });
- //      } catch (e) {// 
- //        console.error(e);
- //      }
-// 
- //      // update me object's cache
- //      const { me } = cache.readQuery({ query: QUERY_ME });
- //      cache.writeQuery({// 
-  //       query: QUERY_ME,
-  //       data: { me: { ...me, thoughts: [...me.thoughts, addThought] } },
- //      });
- //    },
- //  });
-// 
- //  const handleFormSubmit = async (event) => {// 
- //    event.preventDefault();
-// 
- //    try {
- //      const { data } = await addThought({
- //        variables: {
- //          thoughtText,
- //          thoughtAuthor: Auth.getProfile().data.username,
- //        },
- //      });
-// 
- //      setThoughtText('');
- //    } catch (err) {
- //      console.error(err);
- //    }
- //  };
-// 
- //  const handleChange = (event) => {// 
-  //   const { name, value } = event.target;
-// 
-   //  if (name === 'thoughtText' && value.length <= 280) {
-   //    setThoughtText(value);
-   //    setCharacterCount(value.length);
-  //   }
-  // };
-=======
   const [thoughtText, setThoughtText] = useState('');
 
   const [characterCount, setCharacterCount] = useState(0);
 
-  const [addThought, { error }] = useMutation(ADD_POKE, {
-    update(cache, { data: { addThought } }) {
+  const [addPokemon, { error }] = useMutation(ADD_POKE, {
+    update(cache, { data: { addPokemon } }) {
       try {
         const { thoughts } = cache.readQuery({ query: QUERY_ALL_POKES });
 
         cache.writeQuery({
           query: QUERY_ALL_POKES,
-          data: { thoughts: [addThought, ...thoughts] },
+          data: { thoughts: [addPokemon, ...thoughts] },
         });
       } catch (e) {
         console.error(e);
@@ -95,7 +42,7 @@ const ThoughtForm = () => {
       const { me } = cache.readQuery({ query: QUERY_ME });
       cache.writeQuery({
         query: QUERY_ME,
-        data: { me: { ...me, thoughts: [...me.thoughts, addThought] } },
+        data: { me: { ...me, thoughts: [...me.thoughts, addPokemon] } },
       });
     },
   });
@@ -104,7 +51,7 @@ const ThoughtForm = () => {
     event.preventDefault();
 
     try {
-      const { data } = await addThought({
+      const { data } = await addPokemon({
         variables: {
           thoughtText,
           thoughtAuthor: Auth.getProfile().data.username,
@@ -125,7 +72,6 @@ const ThoughtForm = () => {
       setCharacterCount(value.length);
     }
   };
->>>>>>> 798d032a197068cbefe959b66cd7c1f65182e133
 
   return (
     <div>

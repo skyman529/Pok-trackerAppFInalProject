@@ -43,8 +43,8 @@ export const ADD_POKE = gql`
 `;
 
 export const ADD_COMMENT = gql`
-  mutation addComment($thoughtId: ID!, $commentText: String!) {
-    addComment(thoughtId: $thoughtId, commentText: $commentText) {
+  mutation addComment($pokemonId: ID!, $commentText: String!) {
+    addComment(pokemonId: $pokemonId, commentText: $commentText) {
       _id
       thoughtText
       thoughtAuthor

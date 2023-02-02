@@ -14,8 +14,8 @@ const resolvers = {
       const params = username ? { username } : {};
       return Thought.find(params).sort({ createdAt: -1 });
     },
-    thought: async (parent, { thoughtId }) => {
-      return Thought.findOne({ _id: thoughtId });
+    thought: async (parent, { pokemonId }) => {
+      return Thought.findOne({ _id: pokemonId });
     },
     me: async (parent, args, context) => {
       if (context.user) {
@@ -48,7 +48,7 @@ const resolvers = {
 
       return { token, user };
     },
-    addThought: async (parent, { thoughtText }, context) => {
+    addPokemon: async (parent, { thoughtText }, context) => {
       if (context.user) {
         const thought = await Thought.create({
           thoughtText,
@@ -64,10 +64,10 @@ const resolvers = {
       }
       throw new AuthenticationError('You need to be logged in!');
     },
-    addComment: async (parent, { thoughtId, commentText }, context) => {
+    addComment: async (parent, { pokemonId, commentText }, context) => {
       if (context.user) {
         return Thought.findOneAndUpdate(
-          { _id: thoughtId },
+          { _id: pokemonId },
           {
             $addToSet: {
               comments: { commentText, commentAuthor: context.user.username },
@@ -81,10 +81,10 @@ const resolvers = {
       }
       throw new AuthenticationError('You need to be logged in!');
     },
-    removeThought: async (parent, { thoughtId }, context) => {
+    removeThought: async (parent, { pokemonId }, context) => {
       if (context.user) {
         const thought = await Thought.findOneAndDelete({
-          _id: thoughtId,
+          _id: pokemonId,
           thoughtAuthor: context.user.username,
         });
 
@@ -97,10 +97,10 @@ const resolvers = {
       }
       throw new AuthenticationError('You need to be logged in!');
     },
-    removeComment: async (parent, { thoughtId, commentId }, context) => {
+    removeComment: async (parent, { pokemonId, commentId }, context) => {
       if (context.user) {
         return Thought.findOneAndUpdate(
-          { _id: thoughtId },
+          { _id: pokemonId },
           {
             $pull: {
               comments: {
