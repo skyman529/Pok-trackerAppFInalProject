@@ -51,8 +51,8 @@ const resolvers = {
     addPokemon: async (parent, { type }, context) => {
       if (context.user) {
         const pokemon = await Pokemon.create({
-          type,
-          name: context.user.username,
+          shiny,
+          thoughtAuthor: /*HOW DO WE CHANGE THIS?*/ context.user.username, 
         });
 
         await User.findOneAndUpdate(
