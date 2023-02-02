@@ -8,7 +8,7 @@ import { QUERY_ALL_POKES } from '../utils/queries';
 
 const Home = () => {
   const { loading, data } = useQuery(QUERY_ALL_POKES);
-  const thoughts = data?.thoughts || [];
+  const pokemons = data?.pokemons || [];
 
   return (
     <main>
@@ -24,7 +24,7 @@ const Home = () => {
             <div>Loading...</div>
           ) : (
             <ThoughtList
-              thoughts={thoughts}
+              pokemons={pokemons}
               title="Some Feed for Thought(s)..."
             />
           )}
