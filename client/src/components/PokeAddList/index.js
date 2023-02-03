@@ -7,12 +7,12 @@ const PokemonList = ({
   pokemons,
   title,
   showTitle = true,
-  showUsername = true,
+  showUsername = true
 }) => {
-  if (!pokemons.length) {
-    return <h3>No Thoughts Yet</h3>;
-  }
-
+  // if (!pokemons.length) {
+  //   return <h3>No Thoughts Yet</h3>;
+  // }
+  console.log(pokemons);
   return (
     <div>
       {showTitle && <h3>{title}</h3>}
