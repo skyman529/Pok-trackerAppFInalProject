@@ -25,5 +25,87 @@
       "Poison"
     ],
     "image": "./images/pokemon sprites/3.png"
+  },
+  {
+    "id": 4,
+    "name": "Charmander",
+    "type": [
+      "Fire"
+    ],
+    "image": "./images/pokemon sprites/4.png"
+  },
+  {
+    "id": 5,
+    "name": "Charmeleon",
+    "type": [
+      "Fire"
+    ],
+    "image": "./images/pokemon sprites/5.png"
+  },
+  {
+    "id": 6,
+    "name": "Charizard",
+    "type": [
+      "Fire",
+      "Flying"
+    ],
+    "image": "./images/pokemon sprites/6.png"
+  },
+  {
+    "id": 7,
+    "name": "Squirtle",
+    "type": [
+      "Water"
+    ],
+    "image": "./images/pokemon sprites/7.png"
+  },
+  {
+    "id": 8,
+    "name": "Wartortle",
+    "type": [
+      "Water"
+    ],
+    "image": "./images/pokemon sprites/8.png"
+  },
+  {
+    "id": 9,
+    "name": "Blastoise",
+    "type": [
+      "Water"
+    ],
+    "image": "./images/pokemon sprites/9.png"
+  },
+  {
+    "id": 10,
+    "name": "Caterpie",
+    "type": [
+      "Bug"
+    ],
+    "image": "./images/pokemon sprites/10.png"
+  },
+  {
+    "id": 11,
+    "name": "Metapod",
+    "type": [
+      "Bug"
+    ],
+    "image": "./images/pokemon sprites/11.png"
+  },
+  {
+    "id": 12,
+    "name": "Butterfree",
+    "type": [
+      "Bug",
+      "Flying"
+    ],
+    "image": "./images/pokemon sprites/12.png"
+  },
+  {
+    "id": 13,
+    "name": "Weedle",
+    "type": [
+      "Bug",
+      "Poison"
+    ],
+    "image": "./images/pokemon sprites/13.png"
   }
-]
