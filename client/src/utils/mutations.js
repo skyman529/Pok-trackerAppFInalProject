@@ -25,13 +25,19 @@ export const ADD_USER = gql`
 `;
 
 //This will add Poke Card to Profile (data labels may change!) -Faith 
-export const ADD_POKE = gql`
+export const ADD_POKEMON = gql`
   mutation addPoke($shiny: Boolean!) {
     addPokemon(shiny: $shiny) {
           _id
+          name
           type
           imgage
           shiny
+          addedAt
+          comments {
+            _id
+            commentText
+          }
         }
       }
 `;
