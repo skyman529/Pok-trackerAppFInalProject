@@ -108,7 +108,7 @@
       "Poison"
     ],
     "image": "./images/pokemon sprites/13.png"
-  }
+  },
 {
     "id": 14,
     "name": "Kakuna",
@@ -444,7 +444,8 @@
     "id": 53,
     "name": "Persian",
     "type": [
-      "Normal],
+      "Normal"
+    ],
     "image": "./images/pokemon sprites/53.png"
   },
   {
@@ -668,7 +669,7 @@
   {
     "id": 80,
     "name": "Slowbro",
-    "type: [
+    "type": [
       "Water",
       "Psychic"
     ],
@@ -895,3 +896,4 @@
     ],
     "image": "./images/pokemon sprites/106.png"
   }
+]
