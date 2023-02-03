@@ -44,6 +44,8 @@ const PokemonCard = () => {
     },
   });
 
+ 
+
   const pokemonArray = [
     {
       name: "Bulbasaur",
