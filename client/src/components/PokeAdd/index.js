@@ -74,7 +74,7 @@ const PokemonCard = () => {
 
   return (
     <div>
-      {Auth.loggedIn() ? (
+      {/* {Auth.loggedIn() ? ( */}
         <>
           <Row xs={1} md={3} className="g-4 justify-content-md-center">
             {Array.from({ length: 4 }).map((_, idx) => (
@@ -105,7 +105,7 @@ const PokemonCard = () => {
           You need to be logged in to add a Pokemon. Please{' '}
           <Link to="/login">login</Link> or <Link to="/signup">signup.</Link>
         </p>
-      )}
+      {/* )} */}
     </div>
   );
 };

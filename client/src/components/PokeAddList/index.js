@@ -3,16 +3,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const PokemonList = ({
-  pokemons,
-  title,
-  showTitle = true,
-  showUsername = true
-}) => {
-  // if (!pokemons.length) {
-  //   return <h3>No Thoughts Yet</h3>;
-  // }
-  console.log(pokemons);
+const PokemonList = ({ pokemons, title }) => {
+  if (!thoughts.length) {
+    return <h3>No Thoughts Yet</h3>;
+  }
+  
   return (
     <div>
       {showTitle && <h3>{title}</h3>}
