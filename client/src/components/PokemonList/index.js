@@ -2,16 +2,27 @@
 
 import React from 'react';
 
+import { useMutation } from '@apollo/client';
+
 import Badges from '../Badges/index';
+import AddButton from '../AddButton/index';
 import Auth from '../../utils/auth';
 
-import { Button, Card, Col, Row, Form } from 'react-bootstrap';
+import {Card, Col, Row, Form } from 'react-bootstrap';
 
 
 const PokemonList = ({ pokemons }) => {
   if (pokemons) {
     console.log(pokemons);
   }
+
+  const [addPokemon, {error}] = useMutation(ADD_POKEMON, {
+    update(cache, {data: { addPokemon } }) {
+      try {
+        const { }
+      }
+    }
+  })
 
   return (
     <div>
@@ -35,8 +46,10 @@ const PokemonList = ({ pokemons }) => {
                           id="custom-switch"
                         />
                       </Form>
-                      <br></br>
-                      <Button variant="primary" id='pokeCard' data-id={this.pokemon.id}>Add Pokemon</Button>
+                      <br></br>                      
+                      <AddButton 
+                        data={pokemon.id}>
+                      </AddButton>
                     </Card.Body>
                   </Card>
                 </Col>
