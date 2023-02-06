@@ -6,7 +6,7 @@ import Badges from '../Badges/index';
 import AddButton from '../AddButton/index';
 import Auth from '../../utils/auth';
 
-import {Card, Col, Row, Form } from 'react-bootstrap';
+import {Card, Col, Row} from 'react-bootstrap';
 
 
 const PokemonList = ({ pokemons }) => {
@@ -30,15 +30,12 @@ const PokemonList = ({ pokemons }) => {
                       <Badges
                         types={pokemon.type}
                       ></Badges>
-                      <Form>
-                        <Form.Check
-                          type="switch"
-                          id="custom-switch"
-                        />
-                      </Form>
                       <br></br>                      
-                      <AddButton 
-                        data={pokemon.id}>
+                      <AddButton
+                        id={pokemon.id}
+                        name={pokemon.name}
+                        type={pokemon.type}
+                        image={pokemon.image}>
                       </AddButton>
                     </Card.Body>
                   </Card>

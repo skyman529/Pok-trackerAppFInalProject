@@ -4,32 +4,65 @@ import { useMutation } from '@apollo/client';
 import { ADD_POKEMON } from '../../utils/mutations';
 import { QUERY_POKEMONS, QUERY_ME } from '../../utils/queries';
 
-import Button from 'react-bootstrap';
+import {Form, Button} from 'react-bootstrap';
 
 const AddButton = (props) => {
+    const [shiny, setShiny] = useState(false);
 
-    const [addPokemon, {error}] = useMutation(ADD_POKEMON, {
-        update(cache, {data: { addPokemon } }) {
-          try {
-            const { pokemons } = cache.readQuery({ query: QUERY_POKEMONS })
+    const [addPokemon, { error }] = useMutation(ADD_POKEMON, {
+        update(cache, { data: { addPokemon } }) {
+            try {
+                const { pokemons } = cache.readQuery({ query: QUERY_POKEMONS })
 
+                cache.writeQuery({
+                    query: QUERY_POKEMONS,
+                    data: { pokemons: [addPokemon, ...pokemons] },
+                });
+            } catch (e) {
+                console.error(e);
+            }
+            const { me } = cache.readQuery({ query: QUERY_ME });
             cache.writeQuery({
-                query: QUERY_POKEMONS,
-                data: { pokemons: [addPokemon, ...pokemons] },
+                query: QUERY_ME,
+                data: { me: { ...me, pokemons: [...me.pokemons, addPokemon] } },
             });
-          } catch (e) {
-            console.error(e);
-          }
-          const { me } = cache.readQuery({ query: QUERY_ME });
-          cache.writeQuery({
-            query: QUERY_ME,
-            data: { me: { ...me, thoughts: [...me.thoughts, addThought] } },
-          });
         },
-      });
+    });
+
+    const handleFormSubmit = async (event) => {
+        event.preventDefault();
+    
+        try {
+          const { data } = await addPokemon({
+            variables: {
+              name: props.name,
+              type: props.type,
+              image: props.image,
+              shiny: shiny
+            },
+          });
+    
+          setShiny(false);
+        } catch (err) {
+          console.error(err);
+        }
+      };
+
+    const handleShiny = () => {
+        setShiny(!shiny);
+    };
 
     return (
-        <Button variant="primary" id='pokeCard' data-id={props.data}>Add Pokemon</Button>
+        <>
+            <Form>
+                <Form.Check
+                    type="switch"
+                    id="custom-switch"
+                    onClick={handleShiny}
+                />
+            </Form>
+            <Button variant="primary" id='pokeCard' onClick={handleFormSubmit} >Add Pokemon</Button>
+        </>
     )
 };
 export default AddButton;
