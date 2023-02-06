@@ -2,7 +2,6 @@ import React from 'react';
 import { useQuery } from '@apollo/client';
 
 import PokemonList from '../components/PokemonList';
-import PokemonCard from '../components/PokemonCard';
 
 import { QUERY_POKEMONS } from '../utils/queries';
 
@@ -13,9 +12,13 @@ const Home = () => {
   return (
     <main>
       <div>
-        <PokemonList
-          pokemons={pokemons}
-        />
+        {loading ? (
+          <div>Loading...</div>
+        ) : (
+          <PokemonList
+            pokemons={pokemons}
+          />
+        )}
       </div>
     </main>
   );
