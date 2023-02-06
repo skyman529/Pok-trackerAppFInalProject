@@ -1,8 +1,8 @@
 import React from 'react';
 import { useQuery } from '@apollo/client';
 
-import PokemonList from '../components/PokeAddList';
-import PokemonCard from '../components/PokeAdd';
+import PokemonList from '../components/PokemonList';
+import PokemonCard from '../components/PokemonCard';
 
 import { QUERY_POKEMONS } from '../utils/queries';
 
