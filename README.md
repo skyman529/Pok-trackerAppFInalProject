@@ -8,7 +8,7 @@ and adding them to a personal list.
 
 ## Image of Deployed Web Application
 
-<!-- image goes here -->
+<img src="images\Poketracker.png" alt="screenshot of deployed application">
 
 ## Future Additions
 Future additions would include the options of including new Pokemon characters to available options, sharing the collection with other users and possible monetization.
