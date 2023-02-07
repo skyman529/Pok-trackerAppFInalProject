@@ -12,7 +12,7 @@ const typeDefs = gql`
   type Pokemon {
     _id: ID
     name: String
-    type: String
+    type: [String]
     image: String
     shiny: Boolean
     addedAt: String

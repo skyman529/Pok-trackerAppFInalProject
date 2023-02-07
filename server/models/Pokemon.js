@@ -3,7 +3,7 @@ const dateFormat = require('../utils/dateFormat');
 
 const pokemonSchema = new Schema({
   number: {
-    type: Number,
+    type: Number
   },
   name: {
     type: String,
@@ -17,8 +17,7 @@ const pokemonSchema = new Schema({
   shiny: {
     type: Boolean,
   },
-},
-);
+});
 
 const Pokemon = model('Pokemon', pokemonSchema);
 

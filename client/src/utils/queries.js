@@ -23,6 +23,7 @@ export const QUERY_POKEMONS = gql`
   query getPokemons {
     pokemons {
       _id
+      number
       name
       type
       image
