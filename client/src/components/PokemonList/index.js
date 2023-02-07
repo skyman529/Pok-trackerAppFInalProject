@@ -369,7 +369,7 @@ const PokemonList = ({ pokemons }) => {
         <>
           {pokemons &&
             pokemonArray.map((pokemon) => (
-              <Row xs={3} md={3} className="g-4 justify-content-md-center">
+              <Row xs={1} md={3} className="g-4 justify-content-md-center">
                 <Col md="3">
                   <Card style={{ width: '18rem' }}>
                     {/* <Card.Img variant="top" src={pokemon.image} alt="example" /> */}
