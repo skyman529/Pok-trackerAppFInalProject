@@ -25,7 +25,7 @@ const Home = () => {
           ) : (
             <PokemonList
               pokemons={pokemons}
-              title="Some Feed for Thought(s)..."
+              title="Start your collection today!"
             />
           )}
         </div>
