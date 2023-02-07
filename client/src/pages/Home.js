@@ -8,7 +8,7 @@ import { QUERY_POKEMONS } from '../utils/queries';
 const Home = () => {
   const { loading, data } = useQuery(QUERY_POKEMONS);
   const pokemons = data?.pokemons || [];
-  console.log(pokemons);
+  // console.log(pokemons);
 
   return (
     <main>

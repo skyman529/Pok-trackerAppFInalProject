@@ -51,6 +51,10 @@ const resolvers = {
     addPokemon: async (parent, { type }, context) => {
       if (context.user) {
         const pokemon = await Pokemon.create({
+          number,
+          pokeName,
+          pokeType,
+          image,
           shiny
         });
 

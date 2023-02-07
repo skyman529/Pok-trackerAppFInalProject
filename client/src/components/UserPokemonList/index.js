@@ -35,7 +35,7 @@ const UserPokemonList = ({
                 )}
                 <Card.Body>
                   <Card.Text id='pokeCard'>{pokemon.number}</Card.Text>
-                  <Card.Title id='pokeCard'>{pokemon.name}</Card.Title>
+                  <Card.Title id='pokeCard'>{pokemon.pokeName}</Card.Title>
                   <Badges
                     types={pokemon.pokeType}
                   ></Badges>

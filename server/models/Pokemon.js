@@ -3,9 +3,9 @@ const dateFormat = require('../utils/dateFormat');
 
 const pokemonSchema = new Schema({
   number: {
-    type: Number
+    type: Number,
   },
-  name: {
+  pokeName: {
     type: String,
   },
   pokeType: {

@@ -3,14 +3,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import Badges from '../Badges/index';
-import AddButton from '../AddButton/index';
+import PokemonCard from '../PokemonCard/index';
 import Auth from '../../utils/auth';
 
 // import image from '../../images/pokemon_sprites/6.png';
 
-import { Card, Col, Row } from 'react-bootstrap';
-
+import { Col, Row } from 'react-bootstrap';
 
 const PokemonList = ({ pokemons }) => {
   if (pokemons) {
@@ -25,25 +23,14 @@ const PokemonList = ({ pokemons }) => {
             {pokemons &&
               pokemons.map((pokemon) => (
                 <Col>
-                  <Card style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src={`images/pokemon_sprites/${pokemon.number}.png`} />
-                    <Card.Body>
-                      <Card.Text id='pokeCard'>{pokemon.number}</Card.Text>
-                      <Link to={`/thoughts/${pokemon._id}`}>
-                        <Card.Title id='pokeCard'>{pokemon.name}</Card.Title>
-                      </Link>
-                      <Badges
-                        pokeType={pokemon.pokeType}
-                      ></Badges>
-                      <br></br>
-                      <AddButton
-                        number={pokemon.number}
-                        name={pokemon.name}
-                        pokeType={pokemon.pokeType}
-                        image={pokemon.image}>
-                      </AddButton>
-                    </Card.Body>
-                  </Card>
+                  <PokemonCard
+                    key={pokemon._id}
+                    number={pokemon.number}
+                    pokeName={pokemon.pokeName}
+                    pokeType={pokemon.pokeType}
+                    image={pokemon.image}
+                    _id={pokemon._id}
+                  />
                 </Col>
               ))}
           </Row>

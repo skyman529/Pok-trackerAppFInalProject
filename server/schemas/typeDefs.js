@@ -12,11 +12,10 @@ const typeDefs = gql`
   type Pokemon {
     _id: ID
     number: Int
-    name: String
-    pokeType: [String]
+    pokeName: String
+    pokeType: String
     image: String
     shiny: Boolean
-    addedAt: String
     comments: [Comment]!
   }
 
@@ -43,7 +42,7 @@ const typeDefs = gql`
   type Mutation {
     addUser(username: String!, email: String!, password: String!): Auth
     login(email: String!, password: String!): Auth
-    addPokemon(shiny: Boolean!): Pokemon
+    addPokemon(number: Int!, pokeName: String!, pokeType: [String]!, image: String!, shiny: Boolean!): Pokemon
     addComment(pokemonId: ID!, commentText: String!): Pokemon
     removePokemon(pokemonId: ID!): Pokemon
     removeComment(pokemonId: ID!, commentId: ID!): Pokemon
