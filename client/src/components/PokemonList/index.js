@@ -7,6 +7,8 @@ import Badges from '../Badges/index';
 import AddButton from '../AddButton/index';
 import Auth from '../../utils/auth';
 
+// import image from '../../images/pokemon_sprites/6.png';
+
 import { Card, Col, Row } from 'react-bootstrap';
 
 
@@ -19,15 +21,20 @@ const PokemonList = ({ pokemons }) => {
     <div>
       {Auth.loggedIn() ? (
         <>
-          {pokemons &&
-            pokemons.map((pokemon) => (
-              <Row xs={1} md={3} className="g-4 justify-content-md-center">
-                <Col md="3">
+          <Row className="g-4 justify-content-md-center">
+            {pokemons &&
+              pokemons.map((pokemon) => (
+                <Col>
                   <Card style={{ width: '18rem' }}>
-                    {/* <Card.Img variant="top" src={pokemon.image} alt="example" /> */}
+                    <Card.Img variant="top" src={`images/pokemon_sprites/${pokemon.number}.png`} />
                     <Card.Body>
+<<<<<<< HEAD
                       {/* <Card.Text  id='pokeCard'>{pokemon.id}</Card.Text> */}
                       <Link to={`/thoughts/${pokemon.number}`}>
+=======
+                      <Card.Text id='pokeCard'>{pokemon.number}</Card.Text>
+                      <Link to={`/thoughts/${pokemon._id}`}>
+>>>>>>> 0d2cd30cf5f3d8b604761659b1d670d608ffcb2a
                         <Card.Title id='pokeCard'>{pokemon.name}</Card.Title>
                         <Card.Img>{pokemon.image}</Card.Img>
                       </Link>
@@ -44,8 +51,8 @@ const PokemonList = ({ pokemons }) => {
                     </Card.Body>
                   </Card>
                 </Col>
-              </Row>
-            ))}
+              ))}
+          </Row>
         </>
       ) : (
         <p>
