@@ -19,7 +19,7 @@ const userSchema = new Schema({
     required: true,
     minlength: 5,
   },
-  pokemon: [
+  pokemons: [
     {
       type: Schema.Types.ObjectId,
       ref: 'Pokemon',
