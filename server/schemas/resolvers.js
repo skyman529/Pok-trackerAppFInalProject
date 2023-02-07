@@ -11,8 +11,8 @@ const resolvers = {
       return User.findOne({ username }).populate('pokemons');
     },
     pokemons: async (parent, { username }) => {
-      // const params = username ? { username } : {};
-      return Pokemon.find({});
+      const params = username ? { username } : {};
+      return Pokemon.find(params);
     },
     pokemon: async (parent, { pokemonId }) => {
       return Pokemon.findOne({ _id: pokemonId });

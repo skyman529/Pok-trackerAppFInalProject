@@ -31,13 +31,13 @@ const PokemonList = ({ pokemons }) => {
                         <Card.Title id='pokeCard'>{pokemon.name}</Card.Title>
                       </Link>
                       <Badges
-                        types={pokemon.type}
+                        pokeType={pokemon.pokeType}
                       ></Badges>
                       <br></br>
                       <AddButton
-                        id={pokemon.id}
+                        number={pokemon.number}
                         name={pokemon.name}
-                        type={pokemon.type}
+                        pokeType={pokemon.pokeType}
                         image={pokemon.image}>
                       </AddButton>
                     </Card.Body>

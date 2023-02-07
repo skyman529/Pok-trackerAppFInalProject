@@ -29,8 +29,9 @@ export const ADD_POKEMON = gql`
   mutation addPoke($shiny: Boolean!) {
     addPokemon(shiny: $shiny) {
           _id
+          number
           name
-          type
+          pokeType
           imgage
           shiny
           addedAt

@@ -4,7 +4,7 @@ import { useMutation } from '@apollo/client';
 import { ADD_POKEMON } from '../../utils/mutations';
 import { QUERY_POKEMONS, QUERY_ME } from '../../utils/queries';
 
-import {Form, Button} from 'react-bootstrap';
+import { Form, Button } from 'react-bootstrap';
 
 const AddButton = (props) => {
     const [shiny, setShiny] = useState(false);
@@ -31,22 +31,23 @@ const AddButton = (props) => {
 
     const handleFormSubmit = async (event) => {
         event.preventDefault();
-    
+
         try {
-          const { data } = await addPokemon({
-            variables: {
-              name: props.name,
-              type: props.type,
-              image: props.image,
-              shiny: shiny
-            },
-          });
-    
-          setShiny(false);
+            const { data } = await addPokemon({
+                variables: {
+                    number: props.number,
+                    name: props.name,
+                    pokeType: props.pokeType,
+                    image: props.image,
+                    shiny: shiny
+                },
+            });
+
+            setShiny(false);
         } catch (err) {
-          console.error(err);
+            console.error(err);
         }
-      };
+    };
 
     const handleShiny = () => {
         setShiny(!shiny);
