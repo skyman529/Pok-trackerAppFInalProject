@@ -2,11 +2,14 @@ const { Schema, model } = require('mongoose');
 const dateFormat = require('../utils/dateFormat');
 
 const pokemonSchema = new Schema({
+  number: {
+    type: Number
+  },
   name: {
     type: String,
   },
-  type: {
-    type: String,
+  pokeType: {
+    type: Array,
   },
   image: {
     type: String,
@@ -14,11 +17,7 @@ const pokemonSchema = new Schema({
   shiny: {
     type: Boolean,
   },
-},
-{
-  typeKey: "$type"
-}
-);
+});
 
 const Pokemon = model('Pokemon', pokemonSchema);
 

@@ -13,6 +13,7 @@ db.once('open', async () => {
     for (let i = 0; i < pokemonSeeds.length; i++) {
       const { _id } = await Pokemon.create(pokemonSeeds[i]);
       const user = await User.findOneAndUpdate(
+        // {username: thoughtAuthor},
         {
           $addToSet: {
             pokemons: _id,
