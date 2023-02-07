@@ -108,7 +108,7 @@
       "Poison"
     ],
     "image": "./images/pokemon sprites/13.png"
-  },
+  }
 {
     "id": 14,
     "name": "Kakuna",
@@ -895,5 +895,382 @@
       "Fighting"
     ],
     "image": "./images/pokemon sprites/106.png"
+  },
+{
+    "id": 107,
+    "name": "Hitmonchan",
+    "type": [
+      "Fighting"
+    ],
+    "image": "./images/pokemon sprites/107.png"
+  },
+  {
+    "id": 108,
+    "name": "Lickitung",
+    "type": [
+      "Normal"
+    ],
+    "image": "./images/pokemon sprites/108.png"
+  },
+  {
+    "id": 109,
+    "name": "Koffing",
+    "type": [
+      "Poison"
+    ],
+    "image": "./images/pokemon sprites/109.png"
+  },
+  {
+    "id": 110,
+    "name": "Weezing",
+    "type": [
+      "Poison"
+    ],
+    "image": "./images/pokemon sprites/110.png"
+  },
+  {
+    "id": 111,
+    "name": "Rhyhorn",
+    "type": [
+      "Ground",
+      "Rock"
+    ],
+    "image": "./images/pokemon sprites/111.png"
+  },
+  {
+    "id": 112,
+    "name": "Rhydon",
+    "type": [
+      "Ground",
+      "Rock"
+    ],
+    "image": "./images/pokemon sprites/112.png"
+  },
+  {
+    "id": 113,
+    "name": "Chansey",
+    "type": [
+      "Normal"
+    ],
+    "image": "./images/pokemon sprites/113.png"
+  },
+  {
+    "id": 114,
+    "name": "Tangela",
+    "type": [
+      "Grass"
+    ],
+    "image": "./images/pokemon sprites/114.png"
+  },
+  {
+    "id": 115,
+    "name": "Kangaskhan",
+    "type": [
+      "Normal"
+    ],
+    "image": "./images/pokemon sprites/115.png"
+  },
+  {
+    "id": 116,
+    "name": "Horsea",
+    "type": [
+      "Water"
+    ],
+    "image": "./images/pokemon sprites/116.png"
+  },
+ {
+    "id": 117,
+    "name": "Seadra",
+    "type": [
+      "Water"
+    ],
+    "image": "./images/pokemon sprites/117.png"
+  },
+  {
+    "id": 118,
+    "name": "Goldeen",
+    "type": [
+      "Water"
+    ],
+    "image": "./images/pokemon sprites/118.png"
+  },
+  {
+    "id": 119,
+    "name": "Seaking",
+    "type": [
+      "Water"
+    ],
+    "image": "./images/pokemon sprites/119.png"
+  },
+  {
+    "id": 120,
+    "name": "Staryu",
+    "type": [
+      "Water"
+    ],
+    "image": "./images/pokemon sprites/120.png"
+  },
+  {
+    "id": 121,
+    "name": "Starmie",
+    "type": [
+      "Water",
+      "Psychic"
+    ],
+    "image": "./images/pokemon sprites/121.png"
+  },
+  {
+    "id": 122,
+    "name": "Mr. Mime",
+    "type": [
+      "Psychic",
+      "Fairy"
+    ],
+    "image": "./images/pokemon sprites/122.png"
+  },
+  {
+    "id": 123,
+    "name": "Scyther",
+    "type": [
+      "Bug",
+      "Flying"
+    ],
+    "image": "./images/pokemon sprites/123.png"
+  },
+  {
+    "id": 124,
+    "name": "Jynx",
+    "type": [
+      "Ice",
+      "Psychic"
+    ],
+    "image": "./images/pokemon sprites/124.png"
+  },
+  {
+    "id": 125,
+    "name": "Electabuzz",
+    "type": [
+      "Electric"
+    ],
+    "image": "./images/pokemon sprites/125.png"
+  },
+  {
+    "id": 126,
+    "name": "Magmar",
+    "type": [
+      "Fire"
+    ],
+    "image": "./images/pokemon sprites/126.png"
+  },
+{
+    "id": 127,
+    "name": "Pinsir",
+    "type": [
+      "Bug"
+    ],
+    "image": "./images/pokemon sprites/127.png"
+  },
+  {
+    "id": 128,
+    "name": "Tauros",
+    "type": [
+      "Normal"
+    ],
+    "image": "./images/pokemon sprites/128.png"
+  },
+  {
+    "id": 129,
+    "name": "Magikarp",
+    "type": [
+      "Water"
+    ],
+    "image": "./images/pokemon sprites/129.png"
+  },
+  {
+    "id": 130,
+    "name": "Gyarados",
+    "type": [
+      "Water",
+      "Flying"
+    ],
+    "image": "./images/pokemon sprites/130.png"
+  },
+  {
+    "id": 131,
+    "name": "Lapras",
+    "type": [
+      "Water",
+      "Ice"
+    ],
+    "image": "./images/pokemon sprites/131.png"
+  },
+  {
+    "id": 132,
+    "name": "Ditto",
+    "type": [
+      "Normal"
+    ],
+    "image": "./images/pokemon sprites/132.png"
+  },
+  {
+    "id": 133,
+    "name": "Eevee",
+    "type": [
+      "Normal"
+    ],
+    "image": "./images/pokemon sprites/133.png"
+  },
+  {
+    "id": 134,
+    "name": "Vaporeon",
+    "type": [
+      "Water"
+    ],
+    "image": "./images/pokemon sprites/134.png"
+  },
+  {
+    "id": 135,
+    "name": "Jolteon",
+    "type": [
+      "Electric"
+    ],
+    "image": "./images/pokemon sprites/135.png"
+  },
+  {
+    "id": 136,
+    "name": "Flareon",
+    "type": [
+      "Fire"
+    ],
+    "image": "./images/pokemon sprites/136.png"
+  },
+ {
+    "id": 137,
+    "name": "Porygon",
+    "type": [
+      "Normal"
+    ],
+    "image": "./images/pokemon sprites/137.png"
+  },
+  {
+    "id": 138,
+    "name": "Omanyte",
+    "type": [
+      "Rock",
+      "Water"
+    ],
+    "image": "./images/pokemon sprites/138.png"
+  },
+  {
+    "id": 139,
+    "name": "Omastar",
+    "type": [
+      "Rock",
+      "Water"
+    ],
+    "image": "./images/pokemon sprites/139.png"
+  },
+  {
+    "id": 140,
+    "name": "Kabuto",
+    "type": [
+      "Rock",
+      "Water"
+    ],
+    "image": "./images/pokemon sprites/140.png"
+  },
+  {
+    "id": 141,
+    "name": "Kabutops",
+    "type": [
+      "Rock",
+      "Water"
+    ],
+    "image": "./images/pokemon sprites/141.png"
+  },
+  {
+    "id": 142,
+    "name": "Aerodactyl",
+    "type": [
+      "Rock",
+      "Flying"
+    ],
+    "image": "./images/pokemon sprites/142.png"
+  },
+  {
+    "id": 143,
+    "name": "Snorlax",
+    "type": [
+      "Normal"
+    ],
+    "image": "./images/pokemon sprites/143.png"
+  },
+  {
+    "id": 144,
+    "name": "Articuno",
+    "type": [
+      "Ice",
+      "Flying"
+    ],
+    "image": "./images/pokemon sprites/144.png"
+  },
+  {
+    "id": 145,
+    "name": "Zapdos",
+    "type": [
+      "Electric",
+      "Flying"
+    ],
+    "image": "./images/pokemon sprites/145.png"
+  },
+  {
+    "id": 146,
+    "name": "Moltres",
+    "type": [
+      "Fire",
+      "Flying"
+    ],
+    "image": "./images/pokemon sprites/146.png"
+  },
+ {
+    "id": 147,
+    "name": "Dratini",
+    "type": [
+      "Dragon"
+    ],
+    "image": "./images/pokemon sprites/147.png"
+  },
+  {
+    "id": 148,
+    "name": "Dragonair",
+    "type": [
+      "Dragon"
+    ],
+    "image": "./images/pokemon sprites/148.png"
+  },
+  {
+    "id": 149,
+    "name": "Dragonite",
+    "type": [
+      "Dragon",
+      "Flying"
+    ],
+    "image": "./images/pokemon sprites/149.png"
+  },
+  {
+    "id": 150,
+    "name": "Mewtwo",
+    "type": [
+      "Psychic"
+    ],
+    "image": "./images/pokemon sprites/150.png"
+  },
+  {
+    "id": 151,
+    "name": "Mew",
+    "type": [
+      "Psychic"
+    ],
+    "image": "./images/pokemon sprites/151.png"
   }
 ]
