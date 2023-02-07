@@ -2,8 +2,7 @@ import React from 'react';
 import { Navigate, useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 
-import PokemonCard from '../components/PokeAdd';
-import PokemonList from '../components/PokeAddList';
+import UserPokemonList from '../components/UserPokemonList/index';
 
 import { QUERY_USER, QUERY_ME } from '../utils/queries';
 
@@ -28,8 +27,7 @@ const Profile = () => {
   if (!user?.username) {
     return (
       <h4>
-        You need to be logged in to see this. Use the navigation links above to
-        sign up or log in!
+        You need to login!
       </h4>
     );
   }
@@ -42,11 +40,11 @@ const Profile = () => {
         </h2>
 
         <div className="col-12 col-md-10 mb-5">
-          <PokemonList
+          <UserPokemonList
             pokemons={user.pokemons}
             title={`${user.username}'s pokemons...`}
             showTitle={false}
-            showUsername={false}
+            // showUsername={false}
           />
         </div>
         {!userParam && (
@@ -54,7 +52,6 @@ const Profile = () => {
             className="col-12 col-md-10 mb-3 p-3"
             style={{ border: '1px dotted #1a1a1a' }}
           >
-            <PokemonCard />
           </div>
         )}
       </div>

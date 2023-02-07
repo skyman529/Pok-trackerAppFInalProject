@@ -21,7 +21,7 @@ export const QUERY_USER = gql`
 //Will query all pokes to choose from (data labels may change!) -Faith 
 export const QUERY_POKEMONS = gql`
   query getPokemons {
-    pokemon {
+    pokemons {
       _id
       name
       type

@@ -109,7 +109,7 @@
     ],
     "image": "./images/pokemon sprites/13.png"
   },
-{
+  {
     "id": 14,
     "name": "Kakuna",
     "type": [
@@ -332,7 +332,8 @@
     "name": "Wigglytuff",
     "type": [
       "Normal",
-      "Fairy" ],
+      "Fairy"
+    ],
     "image": "./images/pokemon sprites/40.png"
   },
   {
@@ -896,7 +897,7 @@
     ],
     "image": "./images/pokemon sprites/106.png"
   },
-{
+  {
     "id": 107,
     "name": "Hitmonchan",
     "type": [
@@ -978,7 +979,7 @@
     ],
     "image": "./images/pokemon sprites/116.png"
   },
- {
+  {
     "id": 117,
     "name": "Seadra",
     "type": [
@@ -1062,7 +1063,7 @@
     ],
     "image": "./images/pokemon sprites/126.png"
   },
-{
+  {
     "id": 127,
     "name": "Pinsir",
     "type": [
@@ -1144,7 +1145,7 @@
     ],
     "image": "./images/pokemon sprites/136.png"
   },
- {
+  {
     "id": 137,
     "name": "Porygon",
     "type": [
@@ -1232,7 +1233,7 @@
     ],
     "image": "./images/pokemon sprites/146.png"
   },
- {
+  {
     "id": 147,
     "name": "Dratini",
     "type": [
