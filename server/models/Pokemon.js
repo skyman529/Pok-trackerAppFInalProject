@@ -17,7 +17,8 @@ const pokemonSchema = new Schema({
 },
 {
   typeKey: "$type"
-});
+}
+);
 
 const Pokemon = model('Pokemon', pokemonSchema);
 
