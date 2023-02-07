@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 import Badges from '../Badges/index';
 import AddButton from '../AddButton/index';
@@ -7,7 +9,7 @@ import Auth from '../../utils/auth';
 import {Card, Col, Row} from 'react-bootstrap';
 
 
-const PokemonList = ({
+const PokemonCard = ({
   id,
   name,
   type,
@@ -50,4 +52,4 @@ const PokemonList = ({
   );
 };
 
-export default PokemonList;
+export default PokemonCard;
