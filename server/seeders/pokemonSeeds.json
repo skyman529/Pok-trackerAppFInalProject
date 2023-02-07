@@ -6,7 +6,7 @@
       "Grass",
       "Poison"
     ],
-    "image": "./images/pokemon sprites/1.png"
+    "image": "./images/pokemonSprites/1.png"
   },
   {
     "number": 2,
@@ -15,7 +15,7 @@
       "Grass",
       "Poison"
     ],
-    "image": "./images/pokemon sprites/2.png"
+    "image": "./images/pokemonSprites/2.png"
   },
   {
     "number": 3,
@@ -24,7 +24,7 @@
       "Grass",
       "Poison"
     ],
-    "image": "./images/pokemon sprites/3.png"
+    "image": "./images/pokemonSprites/3.png"
   },
   {
     "number": 4,
@@ -32,7 +32,7 @@
     "pokeType": [
       "Fire"
     ],
-    "image": "./images/pokemon sprites/4.png"
+    "image": "./images/pokemonSprites/4.png"
   },
   {
     "number": 5,
@@ -40,7 +40,7 @@
     "pokeType": [
       "Fire"
     ],
-    "image": "./images/pokemon sprites/5.png"
+    "image": "./images/pokemonSprites/5.png"
   },
   {
     "number": 6,
@@ -49,7 +49,7 @@
       "Fire",
       "Flying"
     ],
-    "image": "./images/pokemon sprites/6.png"
+    "image": "./images/pokemonSprites/6.png"
   },
   {
     "number": 7,
@@ -57,7 +57,7 @@
     "pokeType": [
       "Water"
     ],
-    "image": "./images/pokemon sprites/7.png"
+    "image": "./images/pokemonSprites/7.png"
   },
   {
     "number": 8,
@@ -65,7 +65,7 @@
     "pokeType": [
       "Water"
     ],
-    "image": "./images/pokemon sprites/8.png"
+    "image": "./images/pokemonSprites/8.png"
   },
   {
     "number": 9,
@@ -73,7 +73,7 @@
     "pokeType": [
       "Water"
     ],
-    "image": "./images/pokemon sprites/9.png"
+    "image": "./images/pokemonSprites/9.png"
   },
   {
     "number": 10,
@@ -81,7 +81,7 @@
     "pokeType": [
       "Bug"
     ],
-    "image": "./images/pokemon sprites/10.png"
+    "image": "./images/pokemonSprites/10.png"
   },
   {
     "number": 11,
@@ -89,7 +89,7 @@
     "pokeType": [
       "Bug"
     ],
-    "image": "./images/pokemon sprites/11.png"
+    "image": "./images/pokemonSprites/11.png"
   },
   {
     "number": 12,
@@ -98,7 +98,7 @@
       "Bug",
       "Flying"
     ],
-    "image": "./images/pokemon sprites/12.png"
+    "image": "./images/pokemonSprites/12.png"
   },
   {
     "number": 13,
@@ -107,7 +107,7 @@
       "Bug",
       "Poison"
     ],
-    "image": "./images/pokemon sprites/13.png"
+    "image": "./images/pokemonSprites/13.png"
   },
   {
     "number": 14,
@@ -116,7 +116,7 @@
       "Bug",
       "Poison"
     ],
-    "image": "./images/pokemon sprites/14.png"
+    "image": "./images/pokemonSprites/14.png"
   },
   {
     "number": 15,
@@ -125,7 +125,7 @@
       "Bug",
       "Poison"
     ],
-    "image": "./images/pokemon sprites/15.png"
+    "image": "./images/pokemonSprites/15.png"
   },
   {
     "number": 16,
@@ -134,7 +134,7 @@
       "Normal",
       "Flying"
     ],
-    "image": "./images/pokemon sprites/16.png"
+    "image": "./images/pokemonSprites/16.png"
   },
   {
     "number": 17,
@@ -143,7 +143,7 @@
       "Normal",
       "Flying"
     ],
-    "image": "./images/pokemon sprites/17.png"
+    "image": "./images/pokemonSprites/17.png"
   },
   {
     "number": 18,
@@ -152,7 +152,7 @@
       "Normal",
       "Flying"
     ],
-    "image": "./images/pokemon sprites/18.png"
+    "image": "./images/pokemonSprites/18.png"
   },
   {
     "number": 19,
@@ -160,7 +160,7 @@
     "pokeType": [
       "Normal"
     ],
-    "image": "./images/pokemon sprites/19.png"
+    "image": "./images/pokemonSprites/19.png"
   },
   {
     "number": 20,
@@ -168,7 +168,7 @@
     "pokeType": [
       "Normal"
     ],
-    "image": "./images/pokemon sprites/20.png"
+    "image": "./images/pokemonSprites/20.png"
   },
   {
     "number": 21,
@@ -177,7 +177,7 @@
       "Normal",
       "Flying"
     ],
-    "image": "./images/pokemon sprites/21.png"
+    "image": "./images/pokemonSprites/21.png"
   },
   {
     "number": 22,
@@ -186,7 +186,7 @@
       "Normal",
       "Flying"
     ],
-    "image": "./images/pokemon sprites/22.png"
+    "image": "./images/pokemonSprites/22.png"
   },
   {
     "number": 23,
@@ -194,7 +194,7 @@
     "pokeType": [
       "Poison"
     ],
-    "image": "./images/pokemon sprites/23.png"
+    "image": "./images/pokemonSprites/23.png"
   },
   {
     "number": 24,
@@ -202,7 +202,7 @@
     "pokeType": [
       "Poison"
     ],
-    "image": "./images/pokemon sprites/24.png"
+    "image": "./images/pokemonSprites/24.png"
   },
   {
     "number": 25,
@@ -210,7 +210,7 @@
     "pokeType": [
       "Electric"
     ],
-    "image": "./images/pokemon sprites/25.png"
+    "image": "./images/pokemonSprites/25.png"
   },
   {
     "number": 26,
@@ -218,7 +218,7 @@
     "pokeType": [
       "Electric"
     ],
-    "image": "./images/pokemon sprites/26.png"
+    "image": "./images/pokemonSprites/26.png"
   },
   {
     "number": 27,
@@ -226,7 +226,7 @@
     "pokeType": [
       "Ground"
     ],
-    "image": "./images/pokemon sprites/27.png"
+    "image": "./images/pokemonSprites/27.png"
   },
   {
     "number": 28,
@@ -234,7 +234,7 @@
     "pokeType": [
       "Ground"
     ],
-    "image": "./images/pokemon sprites/28.png"
+    "image": "./images/pokemonSprites/28.png"
   },
   {
     "number": 29,
@@ -242,7 +242,7 @@
     "pokeType": [
       "Poison"
     ],
-    "image": "./images/pokemon sprites/29.png"
+    "image": "./images/pokemonSprites/29.png"
   },
   {
     "number": 30,
@@ -250,7 +250,7 @@
     "pokeType": [
       "Poison"
     ],
-    "image": "./images/pokemon sprites/30.png"
+    "image": "./images/pokemonSprites/30.png"
   },
   {
     "number": 31,
@@ -259,7 +259,7 @@
       "Poison",
       "Ground"
     ],
-    "image": "./images/pokemon sprites/31.png"
+    "image": "./images/pokemonSprites/31.png"
   },
   {
     "number": 32,
@@ -267,7 +267,7 @@
     "pokeType": [
       "Poison"
     ],
-    "image": "./images/pokemon sprites/32.png"
+    "image": "./images/pokemonSprites/32.png"
   },
   {
     "number": 33,
@@ -275,7 +275,7 @@
     "pokeType": [
       "Poison"
     ],
-    "image": "./images/pokemon sprites/33.png"
+    "image": "./images/pokemonSprites/33.png"
   },
   {
     "number": 34,
@@ -284,7 +284,7 @@
       "Poison",
       "Ground"
     ],
-    "image": "./images/pokemon sprites/34.png"
+    "image": "./images/pokemonSprites/34.png"
   },
   {
     "number": 35,
@@ -292,7 +292,7 @@
     "pokeType": [
       "Fairy"
     ],
-    "image": "./images/pokemon sprites/35.png"
+    "image": "./images/pokemonSprites/35.png"
   },
   {
     "number": 36,
@@ -300,7 +300,7 @@
     "pokeType": [
       "Fairy"
     ],
-    "image": "./images/pokemon sprites/36.png"
+    "image": "./images/pokemonSprites/36.png"
   },
   {
     "number": 37,
@@ -308,7 +308,7 @@
     "pokeType": [
       "Fire"
     ],
-    "image": "./images/pokemon sprites/37.png"
+    "image": "./images/pokemonSprites/37.png"
   },
   {
     "number": 38,
@@ -316,7 +316,7 @@
     "pokeType": [
       "Fire"
     ],
-    "image": "./images/pokemon sprites/38.png"
+    "image": "./images/pokemonSprites/38.png"
   },
   {
     "number": 39,
@@ -325,7 +325,7 @@
       "Normal",
       "Fairy"
     ],
-    "image": "./images/pokemon sprites/39.png"
+    "image": "./images/pokemonSprites/39.png"
   },
   {
     "number": 40,
@@ -334,7 +334,7 @@
       "Normal",
       "Fairy"
     ],
-    "image": "./images/pokemon sprites/40.png"
+    "image": "./images/pokemonSprites/40.png"
   },
   {
     "number": 41,
@@ -343,7 +343,7 @@
       "Poison",
       "Flying"
     ],
-    "image": "./images/pokemon sprites/41.png"
+    "image": "./images/pokemonSprites/41.png"
   },
   {
     "number": 42,
@@ -352,7 +352,7 @@
       "Poison",
       "Flying"
     ],
-    "image": "./images/pokemon sprites/42.png"
+    "image": "./images/pokemonSprites/42.png"
   },
   {
     "number": 43,
@@ -361,7 +361,7 @@
       "Grass",
       "Poison"
     ],
-    "image": "./images/pokemon sprites/43.png"
+    "image": "./images/pokemonSprites/43.png"
   },
   {
     "number": 44,
@@ -370,7 +370,7 @@
       "Grass",
       "Poison"
     ],
-    "image": "./images/pokemon sprites/44.png"
+    "image": "./images/pokemonSprites/44.png"
   },
   {
     "number": 45,
@@ -379,7 +379,7 @@
       "Grass",
       "Poison"
     ],
-    "image": "./images/pokemon sprites/45.png"
+    "image": "./images/pokemonSprites/45.png"
   },
   {
     "number": 46,
@@ -388,7 +388,7 @@
       "Bug",
       "Grass"
     ],
-    "image": "./images/pokemon sprites/46.png"
+    "image": "./images/pokemonSprites/46.png"
   },
   {
     "number": 47,
@@ -397,7 +397,7 @@
       "Bug",
       "Grass"
     ],
-    "image": "./images/pokemon sprites/47.png"
+    "image": "./images/pokemonSprites/47.png"
   },
   {
     "number": 48,
@@ -406,7 +406,7 @@
       "Bug",
       "Poison"
     ],
-    "image": "./images/pokemon sprites/48.png"
+    "image": "./images/pokemonSprites/48.png"
   },
   {
     "number": 49,
@@ -415,7 +415,7 @@
       "Bug",
       "Poison"
     ],
-    "image": "./images/pokemon sprites/49.png"
+    "image": "./images/pokemonSprites/49.png"
   },
   {
     "number": 50,
@@ -423,7 +423,7 @@
     "pokeType": [
       "Ground"
     ],
-    "image": "./images/pokemon sprites/50.png"
+    "image": "./images/pokemonSprites/50.png"
   },
   {
     "number": 51,
@@ -431,7 +431,7 @@
     "pokeType": [
       "Ground"
     ],
-    "image": "./images/pokemon sprites/51.png"
+    "image": "./images/pokemonSprites/51.png"
   },
   {
     "number": 52,
@@ -439,7 +439,7 @@
     "pokeType": [
       "Normal"
     ],
-    "image": "./images/pokemon sprites/52.png"
+    "image": "./images/pokemonSprites/52.png"
   },
   {
     "number": 53,
@@ -447,7 +447,7 @@
     "pokeType": [
       "Normal"
     ],
-    "image": "./images/pokemon sprites/53.png"
+    "image": "./images/pokemonSprites/53.png"
   },
   {
     "number": 54,
@@ -455,7 +455,7 @@
     "pokeType": [
       "Water"
     ],
-    "image": "./images/pokemon sprites/54.png"
+    "image": "./images/pokemonSprites/54.png"
   },
   {
     "number": 55,
@@ -463,7 +463,7 @@
     "pokeType": [
       "Water"
     ],
-    "image": "./images/pokemon sprites/55.png"
+    "image": "./images/pokemonSprites/55.png"
   },
   {
     "number": 56,
@@ -471,7 +471,7 @@
     "pokeType": [
       "Fighting"
     ],
-    "image": "./images/pokemon sprites/56.png"
+    "image": "./images/pokemonSprites/56.png"
   },
   {
     "number": 57,
@@ -479,7 +479,7 @@
     "pokeType": [
       "Fighting"
     ],
-    "image": "./images/pokemon sprites/57.png"
+    "image": "./images/pokemonSprites/57.png"
   },
   {
     "number": 58,
@@ -487,7 +487,7 @@
     "pokeType": [
       "Fire"
     ],
-    "image": "./images/pokemon sprites/58.png"
+    "image": "./images/pokemonSprites/58.png"
   },
   {
     "number": 59,
@@ -495,7 +495,7 @@
     "pokeType": [
       "Fire"
     ],
-    "image": "./images/pokemon sprites/59.png"
+    "image": "./images/pokemonSprites/59.png"
   },
   {
     "number": 60,
@@ -503,7 +503,7 @@
     "pokeType": [
       "Water"
     ],
-    "image": "./images/pokemon sprites/60.png"
+    "image": "./images/pokemonSprites/60.png"
   },
   {
     "number": 61,
@@ -511,7 +511,7 @@
     "pokeType": [
       "Water"
     ],
-    "image": "./images/pokemon sprites/61.png"
+    "image": "./images/pokemonSprites/61.png"
   },
   {
     "number": 62,
@@ -520,7 +520,7 @@
       "Water",
       "Fighting"
     ],
-    "image": "./images/pokemon sprites/62.png"
+    "image": "./images/pokemonSprites/62.png"
   },
   {
     "number": 63,
@@ -528,7 +528,7 @@
     "pokeType": [
       "Psychic"
     ],
-    "image": "./images/pokemon sprites/63.png"
+    "image": "./images/pokemonSprites/63.png"
   },
   {
     "number": 64,
@@ -536,7 +536,7 @@
     "pokeType": [
       "Psychic"
     ],
-    "image": "./images/pokemon sprites/64.png"
+    "image": "./images/pokemonSprites/64.png"
   },
   {
     "number": 65,
@@ -544,7 +544,7 @@
     "pokeType": [
       "Psychic"
     ],
-    "image": "./images/pokemon sprites/65.png"
+    "image": "./images/pokemonSprites/65.png"
   },
   {
     "number": 66,
@@ -552,7 +552,7 @@
     "pokeType": [
       "Fighting"
     ],
-    "image": "./images/pokemon sprites/66.png"
+    "image": "./images/pokemonSprites/66.png"
   },
   {
     "number": 67,
@@ -560,7 +560,7 @@
     "pokeType": [
       "Fighting"
     ],
-    "image": "./images/pokemon sprites/67.png"
+    "image": "./images/pokemonSprites/67.png"
   },
   {
     "number": 68,
@@ -568,7 +568,7 @@
     "pokeType": [
       "Fighting"
     ],
-    "image": "./images/pokemon sprites/68.png"
+    "image": "./images/pokemonSprites/68.png"
   },
   {
     "number": 69,
@@ -577,7 +577,7 @@
       "Grass",
       "Poison"
     ],
-    "image": "./images/pokemon sprites/69.png"
+    "image": "./images/pokemonSprites/69.png"
   },
   {
     "number": 70,
@@ -586,7 +586,7 @@
       "Grass",
       "Poison"
     ],
-    "image": "./images/pokemon sprites/70.png"
+    "image": "./images/pokemonSprites/70.png"
   },
   {
     "number": 71,
@@ -595,7 +595,7 @@
       "Grass",
       "Poison"
     ],
-    "image": "./images/pokemon sprites/71.png"
+    "image": "./images/pokemonSprites/71.png"
   },
   {
     "number": 72,
@@ -604,7 +604,7 @@
       "Water",
       "Poison"
     ],
-    "image": "./images/pokemon sprites/72.png"
+    "image": "./images/pokemonSprites/72.png"
   },
   {
     "number": 73,
@@ -613,7 +613,7 @@
       "Water",
       "Poison"
     ],
-    "image": "./images/pokemon sprites/73.png"
+    "image": "./images/pokemonSprites/73.png"
   },
   {
     "number": 74,
@@ -622,7 +622,7 @@
       "Rock",
       "Ground"
     ],
-    "image": "./images/pokemon sprites/74.png"
+    "image": "./images/pokemonSprites/74.png"
   },
   {
     "number": 75,
@@ -631,7 +631,7 @@
       "Rock",
       "Ground"
     ],
-    "image": "./images/pokemon sprites/75.png"
+    "image": "./images/pokemonSprites/75.png"
   },
   {
     "number": 76,
@@ -640,7 +640,7 @@
       "Rock",
       "Ground"
     ],
-    "image": "./images/pokemon sprites/76.png"
+    "image": "./images/pokemonSprites/76.png"
   },
   {
     "number": 77,
@@ -648,7 +648,7 @@
     "pokeType": [
       "Fire"
     ],
-    "image": "./images/pokemon sprites/77.png"
+    "image": "./images/pokemonSprites/77.png"
   },
   {
     "number": 78,
@@ -656,7 +656,7 @@
     "pokeType": [
       "Fire"
     ],
-    "image": "./images/pokemon sprites/78.png"
+    "image": "./images/pokemonSprites/78.png"
   },
   {
     "number": 79,
@@ -665,7 +665,7 @@
       "Water",
       "Psychic"
     ],
-    "image": "./images/pokemon sprites/79.png"
+    "image": "./images/pokemonSprites/79.png"
   },
   {
     "number": 80,
@@ -674,7 +674,7 @@
       "Water",
       "Psychic"
     ],
-    "image": "./images/pokemon sprites/80.png"
+    "image": "./images/pokemonSprites/80.png"
   },
   {
     "number": 81,
@@ -683,7 +683,7 @@
       "Electric",
       "Steel"
     ],
-    "image": "./images/pokemon sprites/81.png"
+    "image": "./images/pokemonSprites/81.png"
   },
   {
     "number": 82,
@@ -692,7 +692,7 @@
       "Electric",
       "Steel"
     ],
-    "image": "./images/pokemon sprites/82.png"
+    "image": "./images/pokemonSprites/82.png"
   },
   {
     "number": 83,
@@ -701,7 +701,7 @@
       "Normal",
       "Flying"
     ],
-    "image": "./images/pokemon sprites/83.png"
+    "image": "./images/pokemonSprites/83.png"
   },
   {
     "number": 84,
@@ -710,7 +710,7 @@
       "Normal",
       "Flying"
     ],
-    "image": "./images/pokemon sprites/84.png"
+    "image": "./images/pokemonSprites/84.png"
   },
   {
     "number": 85,
@@ -719,7 +719,7 @@
       "Normal",
       "Flying"
     ],
-    "image": "./images/pokemon sprites/85.png"
+    "image": "./images/pokemonSprites/85.png"
   },
   {
     "number": 86,
@@ -727,7 +727,7 @@
     "pokeType": [
       "Water"
     ],
-    "image": "./images/pokemon sprites/86.png"
+    "image": "./images/pokemonSprites/86.png"
   },
   {
     "number": 87,
@@ -736,7 +736,7 @@
       "Water",
       "Ice"
     ],
-    "image": "./images/pokemon sprites/87.png"
+    "image": "./images/pokemonSprites/87.png"
   },
   {
     "number": 88,
@@ -744,7 +744,7 @@
     "pokeType": [
       "Poison"
     ],
-    "image": "./images/pokemon sprites/88.png"
+    "image": "./images/pokemonSprites/88.png"
   },
   {
     "number": 89,
@@ -752,7 +752,7 @@
     "pokeType": [
       "Poison"
     ],
-    "image": "./images/pokemon sprites/89.png"
+    "image": "./images/pokemonSprites/89.png"
   },
   {
     "number": 90,
@@ -760,7 +760,7 @@
     "pokeType": [
       "Water"
     ],
-    "image": "./images/pokemon sprites/90.png"
+    "image": "./images/pokemonSprites/90.png"
   },
   {
     "number": 91,
@@ -769,7 +769,7 @@
       "Water",
       "Ice"
     ],
-    "image": "./images/pokemon sprites/91.png"
+    "image": "./images/pokemonSprites/91.png"
   },
   {
     "number": 92,
@@ -778,7 +778,7 @@
       "Ghost",
       "Poison"
     ],
-    "image": "./images/pokemon sprites/92.png"
+    "image": "./images/pokemonSprites/92.png"
   },
   {
     "number": 93,
@@ -787,7 +787,7 @@
       "Ghost",
       "Poison"
     ],
-    "image": "./images/pokemon sprites/93.png"
+    "image": "./images/pokemonSprites/93.png"
   },
   {
     "number": 94,
@@ -796,7 +796,7 @@
       "Ghost",
       "Poison"
     ],
-    "image": "./images/pokemon sprites/94.png"
+    "image": "./images/pokemonSprites/94.png"
   },
   {
     "number": 95,
@@ -805,7 +805,7 @@
       "Rock",
       "Ground"
     ],
-    "image": "./images/pokemon sprites/95.png"
+    "image": "./images/pokemonSprites/95.png"
   },
   {
     "number": 96,
@@ -813,7 +813,7 @@
     "pokeType": [
       "Psychic"
     ],
-    "image": "./images/pokemon sprites/96.png"
+    "image": "./images/pokemonSprites/96.png"
   },
   {
     "number": 97,
@@ -821,7 +821,7 @@
     "pokeType": [
       "Psychic"
     ],
-    "image": "./images/pokemon sprites/97.png"
+    "image": "./images/pokemonSprites/97.png"
   },
   {
     "number": 98,
@@ -829,7 +829,7 @@
     "pokeType": [
       "Water"
     ],
-    "image": "./images/pokemon sprites/98.png"
+    "image": "./images/pokemonSprites/98.png"
   },
   {
     "number": 99,
@@ -837,7 +837,7 @@
     "pokeType": [
       "Water"
     ],
-    "image": "./images/pokemon sprites/99.png"
+    "image": "./images/pokemonSprites/99.png"
   },
   {
     "number": 100,
@@ -845,7 +845,7 @@
     "pokeType": [
       "Electric"
     ],
-    "image": "./images/pokemon sprites/100.png"
+    "image": "./images/pokemonSprites/100.png"
   },
   {
     "number": 101,
@@ -853,7 +853,7 @@
     "pokeType": [
       "Electric"
     ],
-    "image": "./images/pokemon sprites/101.png"
+    "image": "./images/pokemonSprites/101.png"
   },
   {
     "number": 102,
@@ -862,7 +862,7 @@
       "Grass",
       "Psychic"
     ],
-    "image": "./images/pokemon sprites/102.png"
+    "image": "./images/pokemonSprites/102.png"
   },
   {
     "number": 103,
@@ -871,7 +871,7 @@
       "Grass",
       "Psychic"
     ],
-    "image": "./images/pokemon sprites/103.png"
+    "image": "./images/pokemonSprites/103.png"
   },
   {
     "number": 104,
@@ -879,7 +879,7 @@
     "pokeType": [
       "Ground"
     ],
-    "image": "./images/pokemon sprites/104.png"
+    "image": "./images/pokemonSprites/104.png"
   },
   {
     "number": 105,
@@ -887,7 +887,7 @@
     "pokeType": [
       "Ground"
     ],
-    "image": "./images/pokemon sprites/105.png"
+    "image": "./images/pokemonSprites/105.png"
   },
   {
     "number": 106,
@@ -895,7 +895,7 @@
     "pokeType": [
       "Fighting"
     ],
-    "image": "./images/pokemon sprites/106.png"
+    "image": "./images/pokemonSprites/106.png"
   },
   {
     "number": 107,
@@ -903,7 +903,7 @@
     "pokeType": [
       "Fighting"
     ],
-    "image": "./images/pokemon sprites/107.png"
+    "image": "./images/pokemonSprites/107.png"
   },
   {
     "number": 108,
@@ -911,7 +911,7 @@
     "pokeType": [
       "Normal"
     ],
-    "image": "./images/pokemon sprites/108.png"
+    "image": "./images/pokemonSprites/108.png"
   },
   {
     "number": 109,
@@ -919,7 +919,7 @@
     "pokeType": [
       "Poison"
     ],
-    "image": "./images/pokemon sprites/109.png"
+    "image": "./images/pokemonSprites/109.png"
   },
   {
     "number": 110,
@@ -927,7 +927,7 @@
     "pokeType": [
       "Poison"
     ],
-    "image": "./images/pokemon sprites/110.png"
+    "image": "./images/pokemonSprites/110.png"
   },
   {
     "number": 111,
@@ -936,7 +936,7 @@
       "Ground",
       "Rock"
     ],
-    "image": "./images/pokemon sprites/111.png"
+    "image": "./images/pokemonSprites/111.png"
   },
   {
     "number": 112,
@@ -945,7 +945,7 @@
       "Ground",
       "Rock"
     ],
-    "image": "./images/pokemon sprites/112.png"
+    "image": "./images/pokemonSprites/112.png"
   },
   {
     "number": 113,
@@ -953,7 +953,7 @@
     "pokeType": [
       "Normal"
     ],
-    "image": "./images/pokemon sprites/113.png"
+    "image": "./images/pokemonSprites/113.png"
   },
   {
     "number": 114,
@@ -961,7 +961,7 @@
     "pokeType": [
       "Grass"
     ],
-    "image": "./images/pokemon sprites/114.png"
+    "image": "./images/pokemonSprites/114.png"
   },
   {
     "number": 115,
@@ -969,7 +969,7 @@
     "pokeType": [
       "Normal"
     ],
-    "image": "./images/pokemon sprites/115.png"
+    "image": "./images/pokemonSprites/115.png"
   },
   {
     "number": 116,
@@ -977,7 +977,7 @@
     "pokeType": [
       "Water"
     ],
-    "image": "./images/pokemon sprites/116.png"
+    "image": "./images/pokemonSprites/116.png"
   },
   {
     "number": 117,
@@ -985,7 +985,7 @@
     "pokeType": [
       "Water"
     ],
-    "image": "./images/pokemon sprites/117.png"
+    "image": "./images/pokemonSprites/117.png"
   },
   {
     "number": 118,
@@ -993,7 +993,7 @@
     "pokeType": [
       "Water"
     ],
-    "image": "./images/pokemon sprites/118.png"
+    "image": "./images/pokemonSprites/118.png"
   },
   {
     "number": 119,
@@ -1001,7 +1001,7 @@
     "pokeType": [
       "Water"
     ],
-    "image": "./images/pokemon sprites/119.png"
+    "image": "./images/pokemonSprites/119.png"
   },
   {
     "number": 120,
@@ -1009,7 +1009,7 @@
     "pokeType": [
       "Water"
     ],
-    "image": "./images/pokemon sprites/120.png"
+    "image": "./images/pokemonSprites/120.png"
   },
   {
     "number": 121,
@@ -1018,7 +1018,7 @@
       "Water",
       "Psychic"
     ],
-    "image": "./images/pokemon sprites/121.png"
+    "image": "./images/pokemonSprites/121.png"
   },
   {
     "number": 122,
@@ -1027,7 +1027,7 @@
       "Psychic",
       "Fairy"
     ],
-    "image": "./images/pokemon sprites/122.png"
+    "image": "./images/pokemonSprites/122.png"
   },
   {
     "number": 123,
@@ -1036,7 +1036,7 @@
       "Bug",
       "Flying"
     ],
-    "image": "./images/pokemon sprites/123.png"
+    "image": "./images/pokemonSprites/123.png"
   },
   {
     "number": 124,
@@ -1045,7 +1045,7 @@
       "Ice",
       "Psychic"
     ],
-    "image": "./images/pokemon sprites/124.png"
+    "image": "./images/pokemonSprites/124.png"
   },
   {
     "number": 125,
@@ -1053,7 +1053,7 @@
     "pokeType": [
       "Electric"
     ],
-    "image": "./images/pokemon sprites/125.png"
+    "image": "./images/pokemonSprites/125.png"
   },
   {
     "number": 126,
@@ -1061,7 +1061,7 @@
     "pokeType": [
       "Fire"
     ],
-    "image": "./images/pokemon sprites/126.png"
+    "image": "./images/pokemonSprites/126.png"
   },
   {
     "number": 127,
@@ -1069,7 +1069,7 @@
     "pokeType": [
       "Bug"
     ],
-    "image": "./images/pokemon sprites/127.png"
+    "image": "./images/pokemonSprites/127.png"
   },
   {
     "number": 128,
@@ -1077,7 +1077,7 @@
     "pokeType": [
       "Normal"
     ],
-    "image": "./images/pokemon sprites/128.png"
+    "image": "./images/pokemonSprites/128.png"
   },
   {
     "number": 129,
@@ -1085,7 +1085,7 @@
     "pokeType": [
       "Water"
     ],
-    "image": "./images/pokemon sprites/129.png"
+    "image": "./images/pokemonSprites/129.png"
   },
   {
     "number": 130,
@@ -1094,7 +1094,7 @@
       "Water",
       "Flying"
     ],
-    "image": "./images/pokemon sprites/130.png"
+    "image": "./images/pokemonSprites/130.png"
   },
   {
     "number": 131,
@@ -1103,7 +1103,7 @@
       "Water",
       "Ice"
     ],
-    "image": "./images/pokemon sprites/131.png"
+    "image": "./images/pokemonSprites/131.png"
   },
   {
     "number": 132,
@@ -1111,7 +1111,7 @@
     "pokeType": [
       "Normal"
     ],
-    "image": "./images/pokemon sprites/132.png"
+    "image": "./images/pokemonSprites/132.png"
   },
   {
     "number": 133,
@@ -1119,7 +1119,7 @@
     "pokeType": [
       "Normal"
     ],
-    "image": "./images/pokemon sprites/133.png"
+    "image": "./images/pokemonSprites/133.png"
   },
   {
     "number": 134,
@@ -1127,7 +1127,7 @@
     "pokeType": [
       "Water"
     ],
-    "image": "./images/pokemon sprites/134.png"
+    "image": "./images/pokemonSprites/134.png"
   },
   {
     "number": 135,
@@ -1135,7 +1135,7 @@
     "pokeType": [
       "Electric"
     ],
-    "image": "./images/pokemon sprites/135.png"
+    "image": "./images/pokemonSprites/135.png"
   },
   {
     "number": 136,
@@ -1143,7 +1143,7 @@
     "pokeType": [
       "Fire"
     ],
-    "image": "./images/pokemon sprites/136.png"
+    "image": "./images/pokemonSprites/136.png"
   },
   {
     "number": 137,
@@ -1151,7 +1151,7 @@
     "pokeType": [
       "Normal"
     ],
-    "image": "./images/pokemon sprites/137.png"
+    "image": "./images/pokemonSprites/137.png"
   },
   {
     "number": 138,
@@ -1160,7 +1160,7 @@
       "Rock",
       "Water"
     ],
-    "image": "./images/pokemon sprites/138.png"
+    "image": "./images/pokemonSprites/138.png"
   },
   {
     "number": 139,
@@ -1169,7 +1169,7 @@
       "Rock",
       "Water"
     ],
-    "image": "./images/pokemon sprites/139.png"
+    "image": "./images/pokemonSprites/139.png"
   },
   {
     "number": 140,
@@ -1178,7 +1178,7 @@
       "Rock",
       "Water"
     ],
-    "image": "./images/pokemon sprites/140.png"
+    "image": "./images/pokemonSprites/140.png"
   },
   {
     "number": 141,
@@ -1187,7 +1187,7 @@
       "Rock",
       "Water"
     ],
-    "image": "./images/pokemon sprites/141.png"
+    "image": "./images/pokemonSprites/141.png"
   },
   {
     "number": 142,
@@ -1196,7 +1196,7 @@
       "Rock",
       "Flying"
     ],
-    "image": "./images/pokemon sprites/142.png"
+    "image": "./images/pokemonSprites/142.png"
   },
   {
     "number": 143,
@@ -1204,7 +1204,7 @@
     "pokeType": [
       "Normal"
     ],
-    "image": "./images/pokemon sprites/143.png"
+    "image": "./images/pokemonSprites/143.png"
   },
   {
     "number": 144,
@@ -1213,7 +1213,7 @@
       "Ice",
       "Flying"
     ],
-    "image": "./images/pokemon sprites/144.png"
+    "image": "./images/pokemonSprites/144.png"
   },
   {
     "number": 145,
@@ -1222,7 +1222,7 @@
       "Electric",
       "Flying"
     ],
-    "image": "./images/pokemon sprites/145.png"
+    "image": "./images/pokemonSprites/145.png"
   },
   {
     "number": 146,
@@ -1231,7 +1231,7 @@
       "Fire",
       "Flying"
     ],
-    "image": "./images/pokemon sprites/146.png"
+    "image": "./images/pokemonSprites/146.png"
   },
   {
     "number": 147,
@@ -1239,7 +1239,7 @@
     "pokeType": [
       "Dragon"
     ],
-    "image": "./images/pokemon sprites/147.png"
+    "image": "./images/pokemonSprites/147.png"
   },
   {
     "number": 148,
@@ -1247,7 +1247,7 @@
     "pokeType": [
       "Dragon"
     ],
-    "image": "./images/pokemon sprites/148.png"
+    "image": "./images/pokemonSprites/148.png"
   },
   {
     "number": 149,
@@ -1256,7 +1256,7 @@
       "Dragon",
       "Flying"
     ],
-    "image": "./images/pokemon sprites/149.png"
+    "image": "./images/pokemonSprites/149.png"
   },
   {
     "number": 150,
@@ -1264,7 +1264,7 @@
     "pokeType": [
       "Psychic"
     ],
-    "image": "./images/pokemon sprites/150.png"
+    "image": "./images/pokemonSprites/150.png"
   },
   {
     "number": 151,
@@ -1272,6 +1272,6 @@
     "pokeType": [
       "Psychic"
     ],
-    "image": "./images/pokemon sprites/151.png"
+    "image": "./images/pokemonSprites/151.png"
   }
 ]
