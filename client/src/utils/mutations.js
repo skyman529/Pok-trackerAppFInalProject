@@ -34,7 +34,6 @@ export const ADD_POKEMON = gql`
           pokeType
           imgage
           shiny
-          addedAt
           comments {
             _id
             commentText
@@ -49,7 +48,6 @@ export const ADD_COMMENT = gql`
       _id
       type
       name
-      addedAt
       comments {
         _id
         commentText
