@@ -30,10 +30,10 @@ const UserPokemonList = ({
                   <Card style={{ width: '18rem' }}>
                     {/* <Card.Img variant="top" src={} alt="example" /> */}
                     <Card.Body>
-                      {/* <Card.Text  id='pokeCard'>{pokemon.id}</Card.Text> */}
+                      <Card.Text  id='pokeCard'>{pokemon.number}</Card.Text>
                       <Card.Title id='pokeCard'>{pokemon.name}</Card.Title>
                       <Badges
-                        types={pokemon.type}
+                        types={pokemon.pokeType}
                       ></Badges>
                       {pokemon.shiny ? (
                         <Card.Text id='pokeCard'>SHINY</Card.Text>

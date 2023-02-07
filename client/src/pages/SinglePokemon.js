@@ -27,9 +27,9 @@ const SinglePoke = () => {
   return (
     <div>
       < PokemonCard 
-        id={pokemon.id}
+        number={pokemon.number}
         name={pokemon.name}
-        type={pokemon.type}
+        type={pokemon.pokeType}
         image={pokemon.image}
       />
       <div className="my-5">
