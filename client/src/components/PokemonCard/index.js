@@ -10,9 +10,9 @@ import {Card, Col, Row} from 'react-bootstrap';
 
 
 const PokemonCard = ({
-  id,
+  number,
   name,
-  type,
+  pokeType,
   image,
 }) => {
 
@@ -25,16 +25,16 @@ const PokemonCard = ({
                   <Card style={{ width: '18rem' }}>
                     {/* <Card.Img variant="top" src={image} alt="example" /> */}
                     <Card.Body>
-                      {/* <Card.Text  id='pokeCard'>{pokemon.id}</Card.Text> */}
+                      <Card.Text  id='pokeCard'>{number}</Card.Text>
                       <Card.Title id='pokeCard'>{name}</Card.Title>
                       <Badges
-                        types={type}
+                        pokeType={pokeType}
                       ></Badges>
                       <br></br>                      
                       <AddButton
-                        id={id}
+                        number={number}
                         name={name}
-                        type={type}
+                        pokeType={pokeType}
                         image={image}>
                       </AddButton>
                     </Card.Body>

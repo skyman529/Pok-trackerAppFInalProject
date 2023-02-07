@@ -9,8 +9,9 @@ export const QUERY_USER = gql`
       email
       pokemon {
         _id
+        number
         name
-        type
+        pokeType
         image
         shiny
       }
@@ -25,7 +26,7 @@ export const QUERY_POKEMONS = gql`
       _id
       number
       name
-      type
+      pokeType
       image
     }
   }
@@ -36,8 +37,9 @@ export const QUERY_SINGLE_POKEMON = gql`
   query getSinglePoke($pokemonId: ID!) {
     pokemon(pokemonId: $pokemonId) {
       _id
+      number
       name
-      type
+      pokeType
       image
       comments {
         _id
@@ -58,8 +60,9 @@ export const QUERY_ME = gql`
       email
       pokemon {
         _id
+        number
         name
-        type
+        pokeType
         image
         shiny
       }

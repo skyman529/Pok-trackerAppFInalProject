@@ -16,7 +16,7 @@ const UserPokemonList = ({
 }) => {
 
   if (!pokemons.length) {
-    return <h3>No Thoughts Yet</h3>;
+    return <h3>No Pokemon Yet</h3>;
   }
 
 
