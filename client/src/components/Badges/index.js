@@ -4,15 +4,15 @@ import Badge from 'react-bootstrap/Badge';
 
 import './style.css';
 
-const types = ["fire", "ice"]; //this is where we pass in the types
 
-const listTypes = types.map((type) =>
-  <Badge pill id={type} className="pill">{type.toUpperCase()}</Badge>
-);
+export default function Badges(props) {
 
+  const types = props.types;
 
-export default function Badges() {
-    return (
-        <div>{listTypes}</div>
-    )
+  const listTypes = types.map((type) =>
+    <Badge pill id={type} className="pill">{type.toUpperCase()}</Badge>
+  );
+  return (
+    <div>{listTypes}</div>
+  )
 }

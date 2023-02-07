@@ -1,1 +1,0 @@
-//This component is to render the Poke Cards List added to the profile (data labels may change!) -Faith

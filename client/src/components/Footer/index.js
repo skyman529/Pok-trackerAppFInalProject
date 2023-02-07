@@ -1,5 +1,7 @@
 import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
+import gif from '../Footer/pikachu-kantocap.gif';
+
 
 const Footer = () => {
   const location = useLocation();
@@ -25,8 +27,9 @@ const Footer = () => {
           >
             ❤️
           </span>{' '}
-          by the Tech Thoughts team.
+          by Ryan, Faith, Cassidy, Eugene, Skylar, and Tim.
         </h4>
+        <img src={gif} alt="pikachu" />
       </div>
     </footer>
   );
