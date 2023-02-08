@@ -76,7 +76,7 @@ const PokemonCard = ({
         <div>
             {Auth.loggedIn() ? (
                 <>
-                    <Card style={{ width: '18rem' }}>
+                    <Card id='pokePoke' style={{ width: '18rem' }}>
                         <Card.Img variant="top" src={`images/pokemon_sprites/${number}.png`} />
                         <Card.Body>
                             <Card.Text id='pokeCard'>{number}</Card.Text>
