@@ -13,7 +13,7 @@ const UserPokemonList = ({
   showTitle = true,
   // showUsername = true, 
 }) => {
-
+  console.log(pokemons[0].pokeType);
   if (!pokemons.length) {
     return <h3>No Pokemons Yet</h3>;
   }
@@ -25,7 +25,7 @@ const UserPokemonList = ({
       <Row className="g-4 justify-content-md-center">
         {pokemons &&
           pokemons.map((pokemon) => (
-            <Col>
+            <Col key={pokemon._id}>
               <Card style={{ width: '18rem' }}>
 
                 {pokemon.shiny === true ? (
@@ -35,9 +35,10 @@ const UserPokemonList = ({
                 )}
                 <Card.Body>
                   <Card.Text id='pokeCard'>{pokemon.number}</Card.Text>
-                  <Card.Title id='pokeCard'>{pokemon.name}</Card.Title>
+                  <Card.Title id='pokeCard'>{pokemon.pokeName}</Card.Title>
                   <Badges
-                    types={pokemon.pokeType}
+                    _id={pokemon._id}
+                    pokeType={pokemon.pokeType}
                   ></Badges>
                   {pokemon.shiny === true ? (
                     <Card.Text id='pokeCard'>SHINY</Card.Text>

@@ -10,9 +10,10 @@ export const QUERY_USER = gql`
       pokemons {
         _id
         number
-        name
+        pokeName
         pokeType
         image
+        pokeUser
         shiny
       }
     }
@@ -25,7 +26,21 @@ export const QUERY_POKEMONS = gql`
     pokemons {
       _id
       number
-      name
+      pokeName
+      pokeType
+      image
+      pokeUser
+      shiny
+    }
+  }
+`;
+
+export const QUERY_POKEMONS_DATA = gql`
+  query getPokemonDatas {
+    pokemondatas {
+      _id
+      number
+      pokeName
       pokeType
       image
     }
@@ -34,19 +49,27 @@ export const QUERY_POKEMONS = gql`
 
 //Will query one poke to choose from (data labels may change and we could add more data to this!!) -Faith 
 export const QUERY_SINGLE_POKEMON = gql`
-  query getSinglePoke($pokemonId: ID!) {
+  query getSinglePokemon($pokemonId: ID!) {
     pokemon(pokemonId: $pokemonId) {
       _id
       number
-      name
+      pokeName
       pokeType
       image
-      comments {
-        _id
-        commentText
-        commentAuthor
-        createdAt
-      }
+      pokeUser
+      shiny
+    }
+  }
+`;
+
+export const QUERY_SINGLE_POKEMON_DATA = gql`
+  query getSinglePokemonData($pokemondataId: ID!) {
+    pokemondata(pokemondataId: $pokemondataId) {
+      _id
+      number
+      pokeName
+      pokeType
+      image
     }
   }
 `;
@@ -61,9 +84,10 @@ export const QUERY_ME = gql`
       pokemons {
         _id
         number
-        name
+        pokeName
         pokeType
         image
+        pokeUser
         shiny
       }
     }

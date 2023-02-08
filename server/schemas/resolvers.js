@@ -1,5 +1,5 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { User, Pokemon } = require('../models');
+const { User, Pokemon, PokemonData } = require('../models');
 const { signToken } = require('../utils/auth');
 
 const resolvers = {
@@ -12,10 +12,16 @@ const resolvers = {
     },
     pokemons: async (parent, { username }) => {
       const params = username ? { username } : {};
-      return Pokemon.find(params);
+      return Pokemon.find(params);;
     },
     pokemon: async (parent, { pokemonId }) => {
       return Pokemon.findOne({ _id: pokemonId });
+    },
+    pokemondatas: async (parent) => {
+      return PokemonData.find({});
+    },
+    pokemondata: async (parent, { pokemondataId }) => {
+      return Pokemon.findOne({ _id: pokemondataId });
     },
     me: async (parent, args, context) => {
       if (context.user) {
@@ -48,9 +54,14 @@ const resolvers = {
 
       return { token, user };
     },
-    addPokemon: async (parent, { type }, context) => {
+    addPokemon: async (parent, { number, pokeName, pokeType, image, shiny }, context) => {
       if (context.user) {
         const pokemon = await Pokemon.create({
+          number,
+          pokeName,
+          pokeType,
+          image,
+          pokeUser: context.user.username,
           shiny
         });
 
@@ -60,23 +71,6 @@ const resolvers = {
         );
 
         return pokemon;
-      }
-      throw new AuthenticationError('You need to be logged in!');
-    },
-    addComment: async (parent, { pokemonId, commentText }, context) => {
-      if (context.user) {
-        return Pokemon.findOneAndUpdate(
-          { _id: pokemonId },
-          {
-            $addToSet: {
-              comments: { commentText, commentAuthor: context.user.username },
-            },
-          },
-          {
-            new: true,
-            runValidators: true,
-          }
-        );
       }
       throw new AuthenticationError('You need to be logged in!');
     },
@@ -93,23 +87,6 @@ const resolvers = {
         );
 
         return pokemon;
-      }
-      throw new AuthenticationError('You need to be logged in!');
-    },
-    removeComment: async (parent, { pokemonId, commentId }, context) => {
-      if (context.user) {
-        return Pokemon.findOneAndUpdate(
-          { _id: pokemonId },
-          {
-            $pull: {
-              comments: {
-                _id: commentId,
-                commentAuthor: context.user.username,
-              },
-            },
-          },
-          { new: true }
-        );
       }
       throw new AuthenticationError('You need to be logged in!');
     },

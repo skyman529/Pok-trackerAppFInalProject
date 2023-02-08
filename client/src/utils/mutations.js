@@ -24,35 +24,16 @@ export const ADD_USER = gql`
   }
 `;
 
-//This will add Poke Card to Profile (data labels may change!) -Faith 
 export const ADD_POKEMON = gql`
-  mutation addPoke($shiny: Boolean!) {
-    addPokemon(shiny: $shiny) {
-          _id
-          number
-          name
-          pokeType
-          imgage
-          shiny
-          comments {
-            _id
-            commentText
-          }
-        }
-      }
-`;
-
-export const ADD_COMMENT = gql`
-  mutation addComment($pokemonId: ID!, $commentText: String!) {
-    addComment(pokemonId: $pokemonId, commentText: $commentText) {
+  mutation addPokemon($number: Int!, $pokeName: String!, $pokeType: [String]!, $image: String!, $shiny: Boolean!) {
+    addPokemon(number: $number, pokeName: $pokeName, pokeType: $pokeType, image: $image, shiny: $shiny) {
       _id
-      type
-      name
-      comments {
-        _id
-        commentText
-        createdAt
-      }
+      number
+      pokeName
+      pokeType
+      image
+      pokeUser
+      shiny
     }
   }
 `;
