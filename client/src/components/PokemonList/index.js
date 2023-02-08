@@ -33,7 +33,7 @@ const PokemonList = ({ pokemons }) => {
                       image={pokemon.image}
                       _id={pokemon._id}
                     />
-                  </Col>
+              </Col>
                 </div>
               ))}
           </Row>

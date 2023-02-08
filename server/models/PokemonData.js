@@ -3,7 +3,7 @@ const dateFormat = require('../utils/dateFormat');
 
 const pokemondataSchema = new Schema({
   number: {
-    type: Number
+    type: Number,
   },
   pokeName: {
     type: String,

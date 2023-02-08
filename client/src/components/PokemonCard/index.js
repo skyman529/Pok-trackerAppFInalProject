@@ -1,6 +1,5 @@
 import { React, useState } from 'react';
 import { Link } from 'react-router-dom';
-
 import { useMutation } from '@apollo/client';
 import { ADD_POKEMON } from '../../utils/mutations';
 import { QUERY_POKEMONS, QUERY_ME } from '../../utils/queries';
@@ -28,7 +27,7 @@ const PokemonCard = ({
     const [addPokemon, { error }] = useMutation(ADD_POKEMON, {
         update(cache, { data: { addPokemon } }) {
             try {
-                const { pokemons } = cache.readQuery({ query: QUERY_POKEMONS })
+                const { pokemons } = cache.readQuery({ query: QUERY_POKEMONS });
 
                 cache.writeQuery({
                     query: QUERY_POKEMONS,
