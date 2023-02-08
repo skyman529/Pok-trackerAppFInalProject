@@ -30,7 +30,7 @@ export const ADD_POKEMON = gql`
     addPokemon(shiny: $shiny) {
           _id
           number
-          name
+          pokeName
           pokeType
           imgage
           pokeUser
@@ -48,7 +48,7 @@ export const ADD_COMMENT = gql`
     addComment(pokemonId: $pokemonId, commentText: $commentText) {
       _id
       number
-      name
+      pokeName
       pokeType
       imgage
       pokeUser

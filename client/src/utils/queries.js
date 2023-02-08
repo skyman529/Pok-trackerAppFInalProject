@@ -10,7 +10,7 @@ export const QUERY_USER = gql`
       pokemons {
         _id
         number
-        name
+        pokeName
         pokeType
         image
         pokeUser
@@ -26,7 +26,7 @@ export const QUERY_POKEMONS = gql`
     pokemons {
       _id
       number
-      name
+      pokeName
       pokeType
       image
       pokeUser
@@ -40,7 +40,7 @@ export const QUERY_POKEMONS_DATA = gql`
     pokemondatas {
       _id
       number
-      name
+      pokeName
       pokeType
       image
     }
@@ -53,7 +53,7 @@ export const QUERY_SINGLE_POKEMON = gql`
     pokemon(pokemonId: $pokemonId) {
       _id
       number
-      name
+      pokeName
       pokeType
       image
       pokeUser
@@ -73,7 +73,7 @@ export const QUERY_SINGLE_POKEMON_DATA = gql`
     pokemondata(pokemondataId: $pokemondataId) {
       _id
       number
-      name
+      pokeName
       pokeType
       image
     }
@@ -90,7 +90,7 @@ export const QUERY_ME = gql`
       pokemons {
         _id
         number
-        name
+        pokeName
         pokeType
         image
         pokeUser

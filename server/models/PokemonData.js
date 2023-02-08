@@ -5,7 +5,7 @@ const pokemondataSchema = new Schema({
   number: {
     type: Number
   },
-  name: {
+  pokeName: {
     type: String,
   },
   pokeType: {

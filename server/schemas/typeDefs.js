@@ -12,7 +12,7 @@ const typeDefs = gql`
   type Pokemon {
     _id: ID
     number: Int
-    name: String
+    pokeName: String
     pokeType: [String]
     image: String
     pokeUser: String
@@ -23,7 +23,7 @@ const typeDefs = gql`
   type PokemonData {
     _id: ID
     number: Int
-    name: String
+    pokeName: String
     pokeType: [String]
     image: String
   }
