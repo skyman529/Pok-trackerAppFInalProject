@@ -12,7 +12,7 @@ const resolvers = {
     },
     pokemons: async (parent, { username }) => {
       const params = username ? { username } : {};
-      return Pokemon.find(params);
+      return Pokemon.find(params);;
     },
     pokemon: async (parent, { pokemonId }) => {
       return Pokemon.findOne({ _id: pokemonId });
