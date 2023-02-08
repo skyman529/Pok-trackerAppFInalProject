@@ -19,7 +19,8 @@
 }
 
 #header {
-  height: 350px;
+  height: 10%;
+  max-width: 100%;
 }
 
 #pokeball {
@@ -35,6 +36,10 @@
 
 
 
+#pokePoke {
+  border: #000000;
+  border-style: inset;
+}
 
 
 
