@@ -1,0 +1,1277 @@
+[
+  {
+    "number": 1,
+    "pokeName": "Bulbasaur",
+    "pokeType": [
+      "Grass",
+      "Poison"
+    ],
+    "image": "./images/pokemon sprites/1.png"
+  },
+  {
+    "number": 2,
+    "pokeName": "Ivysaur",
+    "pokeType": [
+      "Grass",
+      "Poison"
+    ],
+    "image": "./images/pokemon sprites/2.png"
+  },
+  {
+    "number": 3,
+    "pokeName": "Venusaur",
+    "pokeType": [
+      "Grass",
+      "Poison"
+    ],
+    "image": "./images/pokemon sprites/3.png"
+  },
+  {
+    "number": 4,
+    "pokeName": "Charmander",
+    "pokeType": [
+      "Fire"
+    ],
+    "image": "./images/pokemon sprites/4.png"
+  },
+  {
+    "number": 5,
+    "pokeName": "Charmeleon",
+    "pokeType": [
+      "Fire"
+    ],
+    "image": "./images/pokemon sprites/5.png"
+  },
+  {
+    "number": 6,
+    "pokeName": "Charizard",
+    "pokeType": [
+      "Fire",
+      "Flying"
+    ],
+    "image": "./images/pokemon sprites/6.png"
+  },
+  {
+    "number": 7,
+    "pokeName": "Squirtle",
+    "pokeType": [
+      "Water"
+    ],
+    "image": "./images/pokemon sprites/7.png"
+  },
+  {
+    "number": 8,
+    "pokeName": "Wartortle",
+    "pokeType": [
+      "Water"
+    ],
+    "image": "./images/pokemon sprites/8.png"
+  },
+  {
+    "number": 9,
+    "pokeName": "Blastoise",
+    "pokeType": [
+      "Water"
+    ],
+    "image": "./images/pokemon sprites/9.png"
+  },
+  {
+    "number": 10,
+    "pokeName": "Caterpie",
+    "pokeType": [
+      "Bug"
+    ],
+    "image": "./images/pokemon sprites/10.png"
+  },
+  {
+    "number": 11,
+    "pokeName": "Metapod",
+    "pokeType": [
+      "Bug"
+    ],
+    "image": "./images/pokemon sprites/11.png"
+  },
+  {
+    "number": 12,
+    "pokeName": "Butterfree",
+    "pokeType": [
+      "Bug",
+      "Flying"
+    ],
+    "image": "./images/pokemon sprites/12.png"
+  },
+  {
+    "number": 13,
+    "pokeName": "Weedle",
+    "pokeType": [
+      "Bug",
+      "Poison"
+    ],
+    "image": "./images/pokemon sprites/13.png"
+  },
+  {
+    "number": 14,
+    "pokeName": "Kakuna",
+    "pokeType": [
+      "Bug",
+      "Poison"
+    ],
+    "image": "./images/pokemon sprites/14.png"
+  },
+  {
+    "number": 15,
+    "pokeName": "Beedrill",
+    "pokeType": [
+      "Bug",
+      "Poison"
+    ],
+    "image": "./images/pokemon sprites/15.png"
+  },
+  {
+    "number": 16,
+    "pokeName": "Pidgey",
+    "pokeType": [
+      "Normal",
+      "Flying"
+    ],
+    "image": "./images/pokemon sprites/16.png"
+  },
+  {
+    "number": 17,
+    "pokeName": "Pidgeotto",
+    "pokeType": [
+      "Normal",
+      "Flying"
+    ],
+    "image": "./images/pokemon sprites/17.png"
+  },
+  {
+    "number": 18,
+    "pokeName": "Pidgeot",
+    "pokeType": [
+      "Normal",
+      "Flying"
+    ],
+    "image": "./images/pokemon sprites/18.png"
+  },
+  {
+    "number": 19,
+    "pokeName": "Rattata",
+    "pokeType": [
+      "Normal"
+    ],
+    "image": "./images/pokemon sprites/19.png"
+  },
+  {
+    "number": 20,
+    "pokeName": "Raticate",
+    "pokeType": [
+      "Normal"
+    ],
+    "image": "./images/pokemon sprites/20.png"
+  },
+  {
+    "number": 21,
+    "pokeName": "Spearow",
+    "pokeType": [
+      "Normal",
+      "Flying"
+    ],
+    "image": "./images/pokemon sprites/21.png"
+  },
+  {
+    "number": 22,
+    "pokeName": "Fearow",
+    "pokeType": [
+      "Normal",
+      "Flying"
+    ],
+    "image": "./images/pokemon sprites/22.png"
+  },
+  {
+    "number": 23,
+    "pokeName": "Ekans",
+    "pokeType": [
+      "Poison"
+    ],
+    "image": "./images/pokemon sprites/23.png"
+  },
+  {
+    "number": 24,
+    "pokeName": "Arbok",
+    "pokeType": [
+      "Poison"
+    ],
+    "image": "./images/pokemon sprites/24.png"
+  },
+  {
+    "number": 25,
+    "pokeName": "Pikachu",
+    "pokeType": [
+      "Electric"
+    ],
+    "image": "./images/pokemon sprites/25.png"
+  },
+  {
+    "number": 26,
+    "pokeName": "Raichu",
+    "pokeType": [
+      "Electric"
+    ],
+    "image": "./images/pokemon sprites/26.png"
+  },
+  {
+    "number": 27,
+    "pokeName": "Sandshrew",
+    "pokeType": [
+      "Ground"
+    ],
+    "image": "./images/pokemon sprites/27.png"
+  },
+  {
+    "number": 28,
+    "pokeName": "Sandslash",
+    "pokeType": [
+      "Ground"
+    ],
+    "image": "./images/pokemon sprites/28.png"
+  },
+  {
+    "number": 29,
+    "pokeName": "Nidorangirl",
+    "pokeType": [
+      "Poison"
+    ],
+    "image": "./images/pokemon sprites/29.png"
+  },
+  {
+    "number": 30,
+    "pokeName": "Nidorina",
+    "pokeType": [
+      "Poison"
+    ],
+    "image": "./images/pokemon sprites/30.png"
+  },
+  {
+    "number": 31,
+    "pokeName": "Nidoqueen",
+    "pokeType": [
+      "Poison",
+      "Ground"
+    ],
+    "image": "./images/pokemon sprites/31.png"
+  },
+  {
+    "number": 32,
+    "pokeName": "Nidoranboy",
+    "pokeType": [
+      "Poison"
+    ],
+    "image": "./images/pokemon sprites/32.png"
+  },
+  {
+    "number": 33,
+    "pokeName": "Nidorino",
+    "pokeType": [
+      "Poison"
+    ],
+    "image": "./images/pokemon sprites/33.png"
+  },
+  {
+    "number": 34,
+    "pokeName": "Nidoking",
+    "pokeType": [
+      "Poison",
+      "Ground"
+    ],
+    "image": "./images/pokemon sprites/34.png"
+  },
+  {
+    "number": 35,
+    "pokeName": "Clefairy",
+    "pokeType": [
+      "Fairy"
+    ],
+    "image": "./images/pokemon sprites/35.png"
+  },
+  {
+    "number": 36,
+    "pokeName": "Clefable",
+    "pokeType": [
+      "Fairy"
+    ],
+    "image": "./images/pokemon sprites/36.png"
+  },
+  {
+    "number": 37,
+    "pokeName": "Vulpix",
+    "pokeType": [
+      "Fire"
+    ],
+    "image": "./images/pokemon sprites/37.png"
+  },
+  {
+    "number": 38,
+    "pokeName": "Ninetales",
+    "pokeType": [
+      "Fire"
+    ],
+    "image": "./images/pokemon sprites/38.png"
+  },
+  {
+    "number": 39,
+    "pokeName": "Jigglypuff",
+    "pokeType": [
+      "Normal",
+      "Fairy"
+    ],
+    "image": "./images/pokemon sprites/39.png"
+  },
+  {
+    "number": 40,
+    "pokeName": "Wigglytuff",
+    "pokeType": [
+      "Normal",
+      "Fairy"
+    ],
+    "image": "./images/pokemon sprites/40.png"
+  },
+  {
+    "number": 41,
+    "pokeName": "Zubat",
+    "pokeType": [
+      "Poison",
+      "Flying"
+    ],
+    "image": "./images/pokemon sprites/41.png"
+  },
+  {
+    "number": 42,
+    "pokeName": "Golbat",
+    "pokeType": [
+      "Poison",
+      "Flying"
+    ],
+    "image": "./images/pokemon sprites/42.png"
+  },
+  {
+    "number": 43,
+    "pokeName": "Oddish",
+    "pokeType": [
+      "Grass",
+      "Poison"
+    ],
+    "image": "./images/pokemon sprites/43.png"
+  },
+  {
+    "number": 44,
+    "pokeName": "Gloom",
+    "pokeType": [
+      "Grass",
+      "Poison"
+    ],
+    "image": "./images/pokemon sprites/44.png"
+  },
+  {
+    "number": 45,
+    "pokeName": "Vileplume",
+    "pokeType": [
+      "Grass",
+      "Poison"
+    ],
+    "image": "./images/pokemon sprites/45.png"
+  },
+  {
+    "number": 46,
+    "pokeName": "Paras",
+    "pokeType": [
+      "Bug",
+      "Grass"
+    ],
+    "image": "./images/pokemon sprites/46.png"
+  },
+  {
+    "number": 47,
+    "pokeName": "Parasect",
+    "pokeType": [
+      "Bug",
+      "Grass"
+    ],
+    "image": "./images/pokemon sprites/47.png"
+  },
+  {
+    "number": 48,
+    "pokeName": "Venonat",
+    "pokeType": [
+      "Bug",
+      "Poison"
+    ],
+    "image": "./images/pokemon sprites/48.png"
+  },
+  {
+    "number": 49,
+    "pokeName": "Venomoth",
+    "pokeType": [
+      "Bug",
+      "Poison"
+    ],
+    "image": "./images/pokemon sprites/49.png"
+  },
+  {
+    "number": 50,
+    "pokeName": "Diglett",
+    "pokeType": [
+      "Ground"
+    ],
+    "image": "./images/pokemon sprites/50.png"
+  },
+  {
+    "number": 51,
+    "pokeName": "Dugtrio",
+    "pokeType": [
+      "Ground"
+    ],
+    "image": "./images/pokemon sprites/51.png"
+  },
+  {
+    "number": 52,
+    "pokeName": "Meowth",
+    "pokeType": [
+      "Normal"
+    ],
+    "image": "./images/pokemon sprites/52.png"
+  },
+  {
+    "number": 53,
+    "pokeName": "Persian",
+    "pokeType": [
+      "Normal"
+    ],
+    "image": "./images/pokemon sprites/53.png"
+  },
+  {
+    "number": 54,
+    "pokeName": "Psyduck",
+    "pokeType": [
+      "Water"
+    ],
+    "image": "./images/pokemon sprites/54.png"
+  },
+  {
+    "number": 55,
+    "pokeName": "Golduck",
+    "pokeType": [
+      "Water"
+    ],
+    "image": "./images/pokemon sprites/55.png"
+  },
+  {
+    "number": 56,
+    "pokeName": "Mankey",
+    "pokeType": [
+      "Fighting"
+    ],
+    "image": "./images/pokemon sprites/56.png"
+  },
+  {
+    "number": 57,
+    "pokeName": "Primeape",
+    "pokeType": [
+      "Fighting"
+    ],
+    "image": "./images/pokemon sprites/57.png"
+  },
+  {
+    "number": 58,
+    "pokeName": "Growlithe",
+    "pokeType": [
+      "Fire"
+    ],
+    "image": "./images/pokemon sprites/58.png"
+  },
+  {
+    "number": 59,
+    "pokeName": "Arcanine",
+    "pokeType": [
+      "Fire"
+    ],
+    "image": "./images/pokemon sprites/59.png"
+  },
+  {
+    "number": 60,
+    "pokeName": "Poliwag",
+    "pokeType": [
+      "Water"
+    ],
+    "image": "./images/pokemon sprites/60.png"
+  },
+  {
+    "number": 61,
+    "pokeName": "Poliwhirl",
+    "pokeType": [
+      "Water"
+    ],
+    "image": "./images/pokemon sprites/61.png"
+  },
+  {
+    "number": 62,
+    "pokeName": "Poliwrath",
+    "pokeType": [
+      "Water",
+      "Fighting"
+    ],
+    "image": "./images/pokemon sprites/62.png"
+  },
+  {
+    "number": 63,
+    "pokeName": "Abra",
+    "pokeType": [
+      "Psychic"
+    ],
+    "image": "./images/pokemon sprites/63.png"
+  },
+  {
+    "number": 64,
+    "pokeName": "Kadabra",
+    "pokeType": [
+      "Psychic"
+    ],
+    "image": "./images/pokemon sprites/64.png"
+  },
+  {
+    "number": 65,
+    "pokeName": "Alakazam",
+    "pokeType": [
+      "Psychic"
+    ],
+    "image": "./images/pokemon sprites/65.png"
+  },
+  {
+    "number": 66,
+    "pokeName": "Machop",
+    "pokeType": [
+      "Fighting"
+    ],
+    "image": "./images/pokemon sprites/66.png"
+  },
+  {
+    "number": 67,
+    "pokeName": "Machoke",
+    "pokeType": [
+      "Fighting"
+    ],
+    "image": "./images/pokemon sprites/67.png"
+  },
+  {
+    "number": 68,
+    "pokeName": "Machamp",
+    "pokeType": [
+      "Fighting"
+    ],
+    "image": "./images/pokemon sprites/68.png"
+  },
+  {
+    "number": 69,
+    "pokeName": "Bellsprout",
+    "pokeType": [
+      "Grass",
+      "Poison"
+    ],
+    "image": "./images/pokemon sprites/69.png"
+  },
+  {
+    "number": 70,
+    "pokeName": "Weepinbell",
+    "pokeType": [
+      "Grass",
+      "Poison"
+    ],
+    "image": "./images/pokemon sprites/70.png"
+  },
+  {
+    "number": 71,
+    "pokeName": "Victreebel",
+    "pokeType": [
+      "Grass",
+      "Poison"
+    ],
+    "image": "./images/pokemon sprites/71.png"
+  },
+  {
+    "number": 72,
+    "pokeName": "Tentacool",
+    "pokeType": [
+      "Water",
+      "Poison"
+    ],
+    "image": "./images/pokemon sprites/72.png"
+  },
+  {
+    "number": 73,
+    "pokeName": "Tentacruel",
+    "pokeType": [
+      "Water",
+      "Poison"
+    ],
+    "image": "./images/pokemon sprites/73.png"
+  },
+  {
+    "number": 74,
+    "pokeName": "Geodude",
+    "pokeType": [
+      "Rock",
+      "Ground"
+    ],
+    "image": "./images/pokemon sprites/74.png"
+  },
+  {
+    "number": 75,
+    "pokeName": "Graveler",
+    "pokeType": [
+      "Rock",
+      "Ground"
+    ],
+    "image": "./images/pokemon sprites/75.png"
+  },
+  {
+    "number": 76,
+    "pokeName": "Golem",
+    "pokeType": [
+      "Rock",
+      "Ground"
+    ],
+    "image": "./images/pokemon sprites/76.png"
+  },
+  {
+    "number": 77,
+    "pokeName": "Ponyta",
+    "pokeType": [
+      "Fire"
+    ],
+    "image": "./images/pokemon sprites/77.png"
+  },
+  {
+    "number": 78,
+    "pokeName": "Rapidash",
+    "pokeType": [
+      "Fire"
+    ],
+    "image": "./images/pokemon sprites/78.png"
+  },
+  {
+    "number": 79,
+    "pokeName": "Slowpoke",
+    "pokeType": [
+      "Water",
+      "Psychic"
+    ],
+    "image": "./images/pokemon sprites/79.png"
+  },
+  {
+    "number": 80,
+    "pokeName": "Slowbro",
+    "pokeType": [
+      "Water",
+      "Psychic"
+    ],
+    "image": "./images/pokemon sprites/80.png"
+  },
+  {
+    "number": 81,
+    "pokeName": "Magnemite",
+    "pokeType": [
+      "Electric",
+      "Steel"
+    ],
+    "image": "./images/pokemon sprites/81.png"
+  },
+  {
+    "number": 82,
+    "pokeName": "Magneton",
+    "pokeType": [
+      "Electric",
+      "Steel"
+    ],
+    "image": "./images/pokemon sprites/82.png"
+  },
+  {
+    "number": 83,
+    "pokeName": "Farfetch'd",
+    "pokeType": [
+      "Normal",
+      "Flying"
+    ],
+    "image": "./images/pokemon sprites/83.png"
+  },
+  {
+    "number": 84,
+    "pokeName": "Doduo",
+    "pokeType": [
+      "Normal",
+      "Flying"
+    ],
+    "image": "./images/pokemon sprites/84.png"
+  },
+  {
+    "number": 85,
+    "pokeName": "Dodrio",
+    "pokeType": [
+      "Normal",
+      "Flying"
+    ],
+    "image": "./images/pokemon sprites/85.png"
+  },
+  {
+    "number": 86,
+    "pokeName": "Seel",
+    "pokeType": [
+      "Water"
+    ],
+    "image": "./images/pokemon sprites/86.png"
+  },
+  {
+    "number": 87,
+    "pokeName": "Dewgong",
+    "pokeType": [
+      "Water",
+      "Ice"
+    ],
+    "image": "./images/pokemon sprites/87.png"
+  },
+  {
+    "number": 88,
+    "pokeName": "Grimer",
+    "pokeType": [
+      "Poison"
+    ],
+    "image": "./images/pokemon sprites/88.png"
+  },
+  {
+    "number": 89,
+    "pokeName": "Muk",
+    "pokeType": [
+      "Poison"
+    ],
+    "image": "./images/pokemon sprites/89.png"
+  },
+  {
+    "number": 90,
+    "pokeName": "Shellder",
+    "pokeType": [
+      "Water"
+    ],
+    "image": "./images/pokemon sprites/90.png"
+  },
+  {
+    "number": 91,
+    "pokeName": "Cloyster",
+    "pokeType": [
+      "Water",
+      "Ice"
+    ],
+    "image": "./images/pokemon sprites/91.png"
+  },
+  {
+    "number": 92,
+    "pokeName": "Gastly",
+    "pokeType": [
+      "Ghost",
+      "Poison"
+    ],
+    "image": "./images/pokemon sprites/92.png"
+  },
+  {
+    "number": 93,
+    "pokeName": "Haunter",
+    "pokeType": [
+      "Ghost",
+      "Poison"
+    ],
+    "image": "./images/pokemon sprites/93.png"
+  },
+  {
+    "number": 94,
+    "pokeName": "Gengar",
+    "pokeType": [
+      "Ghost",
+      "Poison"
+    ],
+    "image": "./images/pokemon sprites/94.png"
+  },
+  {
+    "number": 95,
+    "pokeName": "Onix",
+    "pokeType": [
+      "Rock",
+      "Ground"
+    ],
+    "image": "./images/pokemon sprites/95.png"
+  },
+  {
+    "number": 96,
+    "pokeName": "Drowzee",
+    "pokeType": [
+      "Psychic"
+    ],
+    "image": "./images/pokemon sprites/96.png"
+  },
+  {
+    "number": 97,
+    "pokeName": "Hypno",
+    "pokeType": [
+      "Psychic"
+    ],
+    "image": "./images/pokemon sprites/97.png"
+  },
+  {
+    "number": 98,
+    "pokeName": "Krabby",
+    "pokeType": [
+      "Water"
+    ],
+    "image": "./images/pokemon sprites/98.png"
+  },
+  {
+    "number": 99,
+    "pokeName": "Kingler",
+    "pokeType": [
+      "Water"
+    ],
+    "image": "./images/pokemon sprites/99.png"
+  },
+  {
+    "number": 100,
+    "pokeName": "Voltorb",
+    "pokeType": [
+      "Electric"
+    ],
+    "image": "./images/pokemon sprites/100.png"
+  },
+  {
+    "number": 101,
+    "pokeName": "Electrode",
+    "pokeType": [
+      "Electric"
+    ],
+    "image": "./images/pokemon sprites/101.png"
+  },
+  {
+    "number": 102,
+    "pokeName": "Exeggcute",
+    "pokeType": [
+      "Grass",
+      "Psychic"
+    ],
+    "image": "./images/pokemon sprites/102.png"
+  },
+  {
+    "number": 103,
+    "pokeName": "Exeggutor",
+    "pokeType": [
+      "Grass",
+      "Psychic"
+    ],
+    "image": "./images/pokemon sprites/103.png"
+  },
+  {
+    "number": 104,
+    "pokeName": "Cubone",
+    "pokeType": [
+      "Ground"
+    ],
+    "image": "./images/pokemon sprites/104.png"
+  },
+  {
+    "number": 105,
+    "pokeName": "Marowak",
+    "pokeType": [
+      "Ground"
+    ],
+    "image": "./images/pokemon sprites/105.png"
+  },
+  {
+    "number": 106,
+    "pokeName": "Hitmonlee",
+    "pokeType": [
+      "Fighting"
+    ],
+    "image": "./images/pokemon sprites/106.png"
+  },
+  {
+    "number": 107,
+    "pokeName": "Hitmonchan",
+    "pokeType": [
+      "Fighting"
+    ],
+    "image": "./images/pokemon sprites/107.png"
+  },
+  {
+    "number": 108,
+    "pokeName": "Lickitung",
+    "pokeType": [
+      "Normal"
+    ],
+    "image": "./images/pokemon sprites/108.png"
+  },
+  {
+    "number": 109,
+    "pokeName": "Koffing",
+    "pokeType": [
+      "Poison"
+    ],
+    "image": "./images/pokemon sprites/109.png"
+  },
+  {
+    "number": 110,
+    "pokeName": "Weezing",
+    "pokeType": [
+      "Poison"
+    ],
+    "image": "./images/pokemon sprites/110.png"
+  },
+  {
+    "number": 111,
+    "pokeName": "Rhyhorn",
+    "pokeType": [
+      "Ground",
+      "Rock"
+    ],
+    "image": "./images/pokemon sprites/111.png"
+  },
+  {
+    "number": 112,
+    "pokeName": "Rhydon",
+    "pokeType": [
+      "Ground",
+      "Rock"
+    ],
+    "image": "./images/pokemon sprites/112.png"
+  },
+  {
+    "number": 113,
+    "pokeName": "Chansey",
+    "pokeType": [
+      "Normal"
+    ],
+    "image": "./images/pokemon sprites/113.png"
+  },
+  {
+    "number": 114,
+    "pokeName": "Tangela",
+    "pokeType": [
+      "Grass"
+    ],
+    "image": "./images/pokemon sprites/114.png"
+  },
+  {
+    "number": 115,
+    "pokeName": "Kangaskhan",
+    "pokeType": [
+      "Normal"
+    ],
+    "image": "./images/pokemon sprites/115.png"
+  },
+  {
+    "number": 116,
+    "pokeName": "Horsea",
+    "pokeType": [
+      "Water"
+    ],
+    "image": "./images/pokemon sprites/116.png"
+  },
+  {
+    "number": 117,
+    "pokeName": "Seadra",
+    "pokeType": [
+      "Water"
+    ],
+    "image": "./images/pokemon sprites/117.png"
+  },
+  {
+    "number": 118,
+    "pokeName": "Goldeen",
+    "pokeType": [
+      "Water"
+    ],
+    "image": "./images/pokemon sprites/118.png"
+  },
+  {
+    "number": 119,
+    "pokeName": "Seaking",
+    "pokeType": [
+      "Water"
+    ],
+    "image": "./images/pokemon sprites/119.png"
+  },
+  {
+    "number": 120,
+    "pokeName": "Staryu",
+    "pokeType": [
+      "Water"
+    ],
+    "image": "./images/pokemon sprites/120.png"
+  },
+  {
+    "number": 121,
+    "pokeName": "Starmie",
+    "pokeType": [
+      "Water",
+      "Psychic"
+    ],
+    "image": "./images/pokemon sprites/121.png"
+  },
+  {
+    "number": 122,
+    "pokeName": "Mr. Mime",
+    "pokeType": [
+      "Psychic",
+      "Fairy"
+    ],
+    "image": "./images/pokemon sprites/122.png"
+  },
+  {
+    "number": 123,
+    "pokeName": "Scyther",
+    "pokeType": [
+      "Bug",
+      "Flying"
+    ],
+    "image": "./images/pokemon sprites/123.png"
+  },
+  {
+    "number": 124,
+    "pokeName": "Jynx",
+    "pokeType": [
+      "Ice",
+      "Psychic"
+    ],
+    "image": "./images/pokemon sprites/124.png"
+  },
+  {
+    "number": 125,
+    "pokeName": "Electabuzz",
+    "pokeType": [
+      "Electric"
+    ],
+    "image": "./images/pokemon sprites/125.png"
+  },
+  {
+    "number": 126,
+    "pokeName": "Magmar",
+    "pokeType": [
+      "Fire"
+    ],
+    "image": "./images/pokemon sprites/126.png"
+  },
+  {
+    "number": 127,
+    "pokeName": "Pinsir",
+    "pokeType": [
+      "Bug"
+    ],
+    "image": "./images/pokemon sprites/127.png"
+  },
+  {
+    "number": 128,
+    "pokeName": "Tauros",
+    "pokeType": [
+      "Normal"
+    ],
+    "image": "./images/pokemon sprites/128.png"
+  },
+  {
+    "number": 129,
+    "pokeName": "Magikarp",
+    "pokeType": [
+      "Water"
+    ],
+    "image": "./images/pokemon sprites/129.png"
+  },
+  {
+    "number": 130,
+    "pokeName": "Gyarados",
+    "pokeType": [
+      "Water",
+      "Flying"
+    ],
+    "image": "./images/pokemon sprites/130.png"
+  },
+  {
+    "number": 131,
+    "pokeName": "Lapras",
+    "pokeType": [
+      "Water",
+      "Ice"
+    ],
+    "image": "./images/pokemon sprites/131.png"
+  },
+  {
+    "number": 132,
+    "pokeName": "Ditto",
+    "pokeType": [
+      "Normal"
+    ],
+    "image": "./images/pokemon sprites/132.png"
+  },
+  {
+    "number": 133,
+    "pokeName": "Eevee",
+    "pokeType": [
+      "Normal"
+    ],
+    "image": "./images/pokemon sprites/133.png"
+  },
+  {
+    "number": 134,
+    "pokeName": "Vaporeon",
+    "pokeType": [
+      "Water"
+    ],
+    "image": "./images/pokemon sprites/134.png"
+  },
+  {
+    "number": 135,
+    "pokeName": "Jolteon",
+    "pokeType": [
+      "Electric"
+    ],
+    "image": "./images/pokemon sprites/135.png"
+  },
+  {
+    "number": 136,
+    "pokeName": "Flareon",
+    "pokeType": [
+      "Fire"
+    ],
+    "image": "./images/pokemon sprites/136.png"
+  },
+  {
+    "number": 137,
+    "pokeName": "Porygon",
+    "pokeType": [
+      "Normal"
+    ],
+    "image": "./images/pokemon sprites/137.png"
+  },
+  {
+    "number": 138,
+    "pokeName": "Omanyte",
+    "pokeType": [
+      "Rock",
+      "Water"
+    ],
+    "image": "./images/pokemon sprites/138.png"
+  },
+  {
+    "number": 139,
+    "pokeName": "Omastar",
+    "pokeType": [
+      "Rock",
+      "Water"
+    ],
+    "image": "./images/pokemon sprites/139.png"
+  },
+  {
+    "number": 140,
+    "pokeName": "Kabuto",
+    "pokeType": [
+      "Rock",
+      "Water"
+    ],
+    "image": "./images/pokemon sprites/140.png"
+  },
+  {
+    "number": 141,
+    "pokeName": "Kabutops",
+    "pokeType": [
+      "Rock",
+      "Water"
+    ],
+    "image": "./images/pokemon sprites/141.png"
+  },
+  {
+    "number": 142,
+    "pokeName": "Aerodactyl",
+    "pokeType": [
+      "Rock",
+      "Flying"
+    ],
+    "image": "./images/pokemon sprites/142.png"
+  },
+  {
+    "number": 143,
+    "pokeName": "Snorlax",
+    "pokeType": [
+      "Normal"
+    ],
+    "image": "./images/pokemon sprites/143.png"
+  },
+  {
+    "number": 144,
+    "pokeName": "Articuno",
+    "pokeType": [
+      "Ice",
+      "Flying"
+    ],
+    "image": "./images/pokemon sprites/144.png"
+  },
+  {
+    "number": 145,
+    "pokeName": "Zapdos",
+    "pokeType": [
+      "Electric",
+      "Flying"
+    ],
+    "image": "./images/pokemon sprites/145.png"
+  },
+  {
+    "number": 146,
+    "pokeName": "Moltres",
+    "pokeType": [
+      "Fire",
+      "Flying"
+    ],
+    "image": "./images/pokemon sprites/146.png"
+  },
+  {
+    "number": 147,
+    "pokeName": "Dratini",
+    "pokeType": [
+      "Dragon"
+    ],
+    "image": "./images/pokemon sprites/147.png"
+  },
+  {
+    "number": 148,
+    "pokeName": "Dragonair",
+    "pokeType": [
+      "Dragon"
+    ],
+    "image": "./images/pokemon sprites/148.png"
+  },
+  {
+    "number": 149,
+    "pokeName": "Dragonite",
+    "pokeType": [
+      "Dragon",
+      "Flying"
+    ],
+    "image": "./images/pokemon sprites/149.png"
+  },
+  {
+    "number": 150,
+    "pokeName": "Mewtwo",
+    "pokeType": [
+      "Psychic"
+    ],
+    "image": "./images/pokemon sprites/150.png"
+  },
+  {
+    "number": 151,
+    "pokeName": "Mew",
+    "pokeType": [
+      "Psychic"
+    ],
+    "image": "./images/pokemon sprites/151.png"
+  }
+]

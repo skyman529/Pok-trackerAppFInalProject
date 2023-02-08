@@ -19,18 +19,27 @@
 }
 
 #header {
-  height: 350px;
+  height: 10%;
+  max-width: 100%;
 }
 
 #pokeball {
   width: 300px;
 }
 
+#pokeCard {
+  font-family: 'Pokemon Solid', sans-serif;
+  font-weight:light;
+  font-size: 20px ;
+}
 
 
 
 
-
+#pokePoke {
+  border: #000000;
+  border-style: inset;
+}
 
 
 
@@ -52,6 +61,7 @@ html {
  */
 body {
   margin: 0;
+  
 }
 
 /**
@@ -59,6 +69,7 @@ body {
  */
 main {
   display: block;
+  
 }
 
 /**
@@ -384,16 +395,22 @@ END NORMALIZE CSS
 html,
 body {
   min-height: 100%;
+  
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol';
+  margin: 0;
+  padding: 0;
+ 
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #414554;
   font-size: 16px;
   color: #1a1a1a;
+
+ 
 }
 
 h1,
@@ -1015,13 +1032,13 @@ a:hover {
   border-radius: 0.3rem;
   border: 1px solid transparent;
   outline: none;
-  color: #1a1a1a;
-  background-color: #aeaeae;
+  color:black;
+  background-color:red;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
 .btn:hover {
-  background-color: #cecece;
+  background-color: red;
 }
 
 .btn.btn-squared {
@@ -1219,9 +1236,13 @@ label form [type='radio'] {
 }
 
 .flex-column {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  background: #BAF2F1 ;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #414554;
+  
 }
 
 .flex-wrap {

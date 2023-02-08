@@ -1,25 +1,26 @@
 const db = require('../config/connection');
-const { User, Thought } = require('../models');
+const { User, Pokemon, PokemonData } = require('../models');
 const userSeeds = require('./userSeeds.json');
-const thoughtSeeds = require('./thoughtSeeds.json');
+const pokemonSeeds = require('./pokemonSeeds.json');
 
 db.once('open', async () => {
   try {
-    await Thought.deleteMany({});
+    await Pokemon.deleteMany({});
+    await PokemonData.deleteMany({});
     await User.deleteMany({});
 
     await User.create(userSeeds);
 
-    for (let i = 0; i < thoughtSeeds.length; i++) {
-      const { _id, thoughtAuthor } = await Thought.create(thoughtSeeds[i]);
-      const user = await User.findOneAndUpdate(
-        { username: thoughtAuthor },
-        {
-          $addToSet: {
-            thoughts: _id,
-          },
-        }
-      );
+    for (let i = 0; i < pokemonSeeds.length; i++) {
+      const { _id } = await PokemonData.create(pokemonSeeds[i]);
+      // const user = await User.findOneAndUpdate(
+      //   // {username: thoughtAuthor},
+      //   {
+      //     $addToSet: {
+      //       pokemons: _id,
+      //     },
+      //   }
+      // );
     }
   } catch (err) {
     console.error(err);
