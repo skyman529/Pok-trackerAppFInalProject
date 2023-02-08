@@ -49,10 +49,10 @@ const PokemonCard = ({
         try {
             const { data } = await addPokemon({
                 variables: {
-                    number: number,
-                    pokeName: pokeName,
-                    pokeType: pokeType,
-                    image: image,
+                    number,
+                    pokeName,
+                    pokeType,
+                    image,
                     pokeUser: Auth.getProfile().data.username,
                     shiny: shiny
                 },

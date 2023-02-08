@@ -12,9 +12,9 @@ import { Col, Row } from 'react-bootstrap';
 
 
 const PokemonList = ({ pokemons }) => {
-  // if (pokemons) {
-  //   console.log(pokemons);
-  // }
+  if (pokemons) {
+    console.log(pokemons);
+  }
 
   return (
     <div>
@@ -23,8 +23,7 @@ const PokemonList = ({ pokemons }) => {
           <Row className="g-4 justify-content-md-center">
             {pokemons &&
               pokemons.map((pokemon) => (
-                <div key={pokemon._id}>
-                  <Col>
+                <Col key={pokemon._id}>
                     <PokemonCard
                       key={pokemon._id}
                       number={pokemon.number}
@@ -34,7 +33,6 @@ const PokemonList = ({ pokemons }) => {
                       _id={pokemon._id}
                     />
               </Col>
-                </div>
               ))}
           </Row>
         </>

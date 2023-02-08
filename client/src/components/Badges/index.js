@@ -10,9 +10,7 @@ export default function Badges(props) {
   const id = props._id;
 
   const listTypes = pokeType.map((type) =>
-    <div key={id+type}>
-      <Badge pill id={type.toLowerCase()} className="pill">{type}</Badge>
-    // </div>
+      <Badge key={id+type} pill id={type.toLowerCase()} className="pill">{type}</Badge>
   );
   return (
     <div>{listTypes}</div>
