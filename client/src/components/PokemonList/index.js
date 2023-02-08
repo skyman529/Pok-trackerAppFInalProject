@@ -3,11 +3,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import Badges from '../Badges/index';
-import AddButton from '../AddButton/index';
+import PokemonCard from '../PokemonCard/index';
 import Auth from '../../utils/auth';
 
-import { Card, Col, Row } from 'react-bootstrap';
+// import image from '../../images/pokemon_sprites/6.png';
+
+import { Col, Row } from 'react-bootstrap';
 
 
 const PokemonList = ({ pokemons }) => {
@@ -19,32 +20,21 @@ const PokemonList = ({ pokemons }) => {
     <div>
       {Auth.loggedIn() ? (
         <>
-          {pokemons &&
-            pokemons.map((pokemon) => (
-              <Row xs={1} md={3} className="g-4 justify-content-md-center">
-                <Col md="3">
-                  <Card style={{ width: '18rem' }}>
-                    {/* <Card.Img variant="top" src={pokemon.image} alt="example" /> */}
-                    <Card.Body>
-                      {/* <Card.Text  id='pokeCard'>{pokemon.id}</Card.Text> */}
-                      <Link to={`/thoughts/${pokemon._id}`}>
-                        <Card.Title id='pokeCard'>{pokemon.name}</Card.Title>
-                      </Link>
-                      <Badges
-                        types={pokemon.type}
-                      ></Badges>
-                      <br></br>
-                      <AddButton
-                        id={pokemon.id}
-                        name={pokemon.name}
-                        type={pokemon.type}
-                        image={pokemon.image}>
-                      </AddButton>
-                    </Card.Body>
-                  </Card>
-                </Col>
-              </Row>
-            ))}
+          <Row className="g-4 justify-content-md-center">
+            {pokemons &&
+              pokemons.map((pokemon) => (
+                <Col key={pokemon._id}>
+                    <PokemonCard
+                      key={pokemon._id}
+                      number={pokemon.number}
+                      pokeName={pokemon.pokeName}
+                      pokeType={pokemon.pokeType}
+                      image={pokemon.image}
+                      _id={pokemon._id}
+                    />
+              </Col>
+              ))}
+          </Row>
         </>
       ) : (
         <p>
@@ -57,3 +47,5 @@ const PokemonList = ({ pokemons }) => {
 };
 
 export default PokemonList;
+
+

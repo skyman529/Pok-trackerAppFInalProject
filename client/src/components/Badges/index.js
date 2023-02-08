@@ -6,11 +6,11 @@ import './style.css';
 
 
 export default function Badges(props) {
+  const pokeType = props.pokeType;
+  const id = props._id;
 
-  const types = props.types;
-
-  const listTypes = types.map((type) =>
-    <Badge pill id={type} className="pill">{type.toUpperCase()}</Badge>
+  const listTypes = pokeType.map((type) =>
+      <Badge key={id+type} pill id={type.toLowerCase()} className="pill">{type}</Badge>
   );
   return (
     <div>{listTypes}</div>
