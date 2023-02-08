@@ -59,6 +59,9 @@ const PokemonCard = ({
             });
 
             setShiny(false);
+            {
+                alert("Added to collection!");
+            }
         } catch (err) {
             console.error(err);
         }
