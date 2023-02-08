@@ -69,7 +69,7 @@ function App() {
                 element={<Profile />}
               />
               <Route 
-                path="/pokemons/:pokemondataId"
+                path="/pokemons/:pokemonId"
                 element={<SinglePokemon />}
               />
             </Routes>
