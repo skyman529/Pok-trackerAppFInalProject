@@ -1,10 +1,11 @@
 const db = require('../config/connection');
-const { User, PokemonData } = require('../models');
+const { User, Pokemon, PokemonData } = require('../models');
 const userSeeds = require('./userSeeds.json');
 const pokemonSeeds = require('./pokemonSeeds.json');
 
 db.once('open', async () => {
   try {
+    await Pokemon.deleteMany({});
     await PokemonData.deleteMany({});
     await User.deleteMany({});
 

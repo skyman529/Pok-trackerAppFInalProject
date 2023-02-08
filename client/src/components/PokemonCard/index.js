@@ -23,7 +23,7 @@ const PokemonCard = ({
 
   const [shiny, setShiny] = useState(false);
 
-    console.log(number);
+    // console.log(number);
 
     const [addPokemon, { error }] = useMutation(ADD_POKEMON, {
         update(cache, { data: { addPokemon } }) {
@@ -69,9 +69,9 @@ const PokemonCard = ({
         setShiny(!shiny);
     };
 
-    useEffect(() => {
-        console.log(shiny);
-      });
+    // useEffect(() => {
+    //     console.log(shiny);
+    //   });
 
     return (
         <div>
@@ -85,6 +85,7 @@ const PokemonCard = ({
                                 <Card.Title id='pokeCard'>{pokeName}</Card.Title>
                             </Link>
                             <Badges
+                                _id={pokeName._id}
                                 pokeType={pokeType}
                             ></Badges>
                             <br></br>

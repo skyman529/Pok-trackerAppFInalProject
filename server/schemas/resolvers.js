@@ -54,9 +54,14 @@ const resolvers = {
 
       return { token, user };
     },
-    addPokemon: async (parent, { type }, context) => {
+    addPokemon: async (parent, { number, pokeName, pokeType, image, shiny }, context) => {
       if (context.user) {
         const pokemon = await Pokemon.create({
+          number,
+          pokeName,
+          pokeType,
+          image,
+          pokeUser: context.user.username,
           shiny
         });
 
