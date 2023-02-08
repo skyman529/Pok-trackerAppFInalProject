@@ -33,6 +33,7 @@ export const ADD_POKEMON = gql`
           name
           pokeType
           imgage
+          pokeUser
           shiny
           comments {
             _id
@@ -46,8 +47,12 @@ export const ADD_COMMENT = gql`
   mutation addComment($pokemonId: ID!, $commentText: String!) {
     addComment(pokemonId: $pokemonId, commentText: $commentText) {
       _id
-      type
+      number
       name
+      pokeType
+      imgage
+      pokeUser
+      shiny
       comments {
         _id
         commentText

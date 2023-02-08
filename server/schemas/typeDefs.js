@@ -15,9 +15,17 @@ const typeDefs = gql`
     name: String
     pokeType: [String]
     image: String
+    pokeUser: String
     shiny: Boolean
-    addedAt: String
     comments: [Comment]!
+  }
+
+  type PokemonData {
+    _id: ID
+    number: Int
+    name: String
+    pokeType: [String]
+    image: String
   }
 
   type Comment {
@@ -37,6 +45,8 @@ const typeDefs = gql`
     user(username: String!): User
     pokemons(username: String): [Pokemon]
     pokemon(pokemonId: ID!): Pokemon
+    pokemondatas: [PokemonData]
+    pokemondata(pokemondataId: ID!): PokemonData
     me: User
   }
 

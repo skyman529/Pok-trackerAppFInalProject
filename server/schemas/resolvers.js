@@ -1,5 +1,5 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { User, Pokemon } = require('../models');
+const { User, Pokemon, PokemonData } = require('../models');
 const { signToken } = require('../utils/auth');
 
 const resolvers = {
@@ -16,6 +16,12 @@ const resolvers = {
     },
     pokemon: async (parent, { pokemonId }) => {
       return Pokemon.findOne({ _id: pokemonId });
+    },
+    pokemondatas: async (parent) => {
+      return PokemonData.find({});
+    },
+    pokemondata: async (parent, { pokemondataId }) => {
+      return Pokemon.findOne({ _id: pokemondataId });
     },
     me: async (parent, args, context) => {
       if (context.user) {

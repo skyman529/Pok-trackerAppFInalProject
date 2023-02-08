@@ -1,7 +1,7 @@
 const { Schema, model } = require('mongoose');
 const dateFormat = require('../utils/dateFormat');
 
-const pokemonSchema = new Schema({
+const pokemondataSchema = new Schema({
   number: {
     type: Number
   },
@@ -14,14 +14,8 @@ const pokemonSchema = new Schema({
   image: {
     type: String,
   },
-  pokeUser: {
-    type: String,
-  },
-  shiny: {
-    type: Boolean,
-  },
 });
 
-const Pokemon = model('Pokemon', pokemonSchema);
+const PokemonData = model('PokemonData', pokemondataSchema);
 
-module.exports = Pokemon;
+module.exports = PokemonData;
