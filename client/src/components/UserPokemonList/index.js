@@ -13,7 +13,6 @@ const UserPokemonList = ({
   showTitle = true,
   // showUsername = true, 
 }) => {
-  console.log(pokemons[0].pokeType);
   if (!pokemons.length) {
     return <h3>No Pokemons Yet</h3>;
   }
