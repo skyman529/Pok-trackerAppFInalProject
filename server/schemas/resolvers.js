@@ -48,15 +48,19 @@ const resolvers = {
 
       return { token, user };
     },
-    addPokemon: async (parent, { type }, context) => {
+    addPokemon: async (parent, { number, name, pokeType, image, shiny }, context) => {
       if (context.user) {
         const pokemon = await Pokemon.create({
-          shiny
+          number,
+          name,
+          pokeType,
+          image,
+          shiny,
         });
 
         await User.findOneAndUpdate(
           { _id: context.user._id },
-          { $addToSet: { pokemons: pokemon._id } }
+          { $addToSet: { pokemons: pokemon.name } }
         );
 
         return pokemon;
