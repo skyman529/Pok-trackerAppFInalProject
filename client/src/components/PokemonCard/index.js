@@ -18,9 +18,9 @@ const PokemonCard = ({
     image,
 }) => {
 
-  // console.log(pokemon.pokeName)
+    // console.log(pokemon.pokeName)
 
-  const [shiny, setShiny] = useState(false);
+    const [shiny, setShiny] = useState(false);
 
     // console.log(number);
 
@@ -76,26 +76,25 @@ const PokemonCard = ({
         <div>
             {Auth.loggedIn() ? (
                 <>
-                    <Card style={{ width: '18rem' }}>
+                    <Card style={{ width: '18rem' }} id="border-golden">
+                        <Button variant="primary" id="pokeCard" className="bg-red" onClick={handleFormSubmit} >Add Pokemon</Button>
+                        <Card.Text id='pokeCard' className="p-2">{number}</Card.Text>
                         <Card.Img variant="top" src={`images/pokemon_sprites/${number}.png`} />
                         <Card.Body>
-                            <Card.Text id='pokeCard'>{number}</Card.Text>
-                            <Link to={`/thoughts/${_id}`}>
-                                <Card.Title id='pokeCard'>{pokeName}</Card.Title>
-                            </Link>
+                            <Card.Title id='pokeCenter' className='cardTitle py-2 text-blue'>{pokeName}</Card.Title>
                             <Badges
                                 _id={pokeName._id}
                                 pokeType={pokeType}
                             ></Badges>
-                            <br></br>
-                            <Form>
+                            <Form id="pokeText" className="px-1 pt-3">Shiny:
                                 <Form.Check
+                                    inline
                                     type="switch"
                                     id="custom-switch"
+                                    label=""
                                     onClick={handleShiny}
                                 />
                             </Form>
-                            <Button variant="primary" id='pokeCard'  onClick={handleFormSubmit} >Add Pokemon</Button>
                         </Card.Body>
                     </Card>
                 </>

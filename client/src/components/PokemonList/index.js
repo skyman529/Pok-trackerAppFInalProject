@@ -8,7 +8,7 @@ import Auth from '../../utils/auth';
 
 // import image from '../../images/pokemon_sprites/6.png';
 
-import { Col, Row } from 'react-bootstrap';
+import { Col, Row, Card, Form, Button } from 'react-bootstrap';
 
 
 const PokemonList = ({ pokemons }) => {
@@ -24,25 +24,35 @@ const PokemonList = ({ pokemons }) => {
             {pokemons &&
               pokemons.map((pokemon) => (
                 <Col key={pokemon._id}>
-                    <PokemonCard
-                      key={pokemon._id}
-                      number={pokemon.number}
-                      pokeName={pokemon.pokeName}
-                      pokeType={pokemon.pokeType}
-                      image={pokemon.image}
-                      _id={pokemon._id}
-                    />
-              </Col>
+                  <PokemonCard
+                    key={pokemon._id}
+                    number={pokemon.number}
+                    pokeName={pokemon.pokeName}
+                    pokeType={pokemon.pokeType}
+                    image={pokemon.image}
+                    _id={pokemon._id}
+                  />
+                </Col>
               ))}
           </Row>
         </>
       ) : (
-        <p>
-          You need login to add Pokemon. Please{' '}
-          <Link to="/login">login</Link> or <Link to="/signup">signup.</Link>
-        </p>
-      )}
-    </div>
+        <>
+          <Row className="justify-content-md-center" >
+          <Col>
+            <Card id="border-golden">
+              <Card.Body>
+                <Card.Title id='pokeCenter' className='cardTitle py-2 text-red'>You need login to add Pokemon. Please{' '}
+                  <Link to="/login">login</Link> or <Link to="/signup">signup.</Link>
+                </Card.Title>
+              </Card.Body>
+            </Card>
+          </Col>
+          </Row>
+        </>
+  )
+}
+    </div >
   );
 };
 

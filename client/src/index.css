@@ -19,28 +19,49 @@
 }
 
 #header {
-  height: 350px;
+  height: 10%;
+  max-width: 100%;
 }
 
 #pokeball {
   width: 300px;
 }
 
+#shiny {
+  text-align: center;
+  font-family: 'Pokemon Solid', sans-serif;
+  font-weight:light;
+  font-size: 30px;
+}
+
+#custon-switch {
+  display: inline;
+}
+
 #pokeCard {
   font-family: 'Pokemon Solid', sans-serif;
   font-weight:light;
-  font-size: 20px ;
+  font-size: 30px;
 }
 
+#pokeCenter {
+  font-family: 'Pokemon Solid', sans-serif;
+  font-weight:light;
+  font-size: 30px;
+  text-align: center;
+}
 
+#pokeText {
+  font-family: 'Pokemon Solid', sans-serif;
+  font-weight:light;
+  font-size: 20px;
+}
 
-
-
-
-
-
-
-
+.navigation {
+  font-family: 'Pokemon Solid', sans-serif;
+  font-weight:light;
+  font-size: 25px ;
+}
 
 html {
   line-height: 1.15;
@@ -96,7 +117,7 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace;
+  font-family: 'Pokemon Solid', sans-serif;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -139,7 +160,7 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
+  font-family: 'Pokemon Solid', sans-serif;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -192,7 +213,7 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
+  font-family: 'Pokemon Solid', sans-serif;
   /* 1 */
   font-size: 100%;
   /* 1 */
@@ -399,7 +420,7 @@ body {
   margin: 0;
   padding: 0;
  
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Pokemon Solid', sans-serif;
   font-size: 14px;
   color: #414554;
   font-size: 16px;
@@ -414,7 +435,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Pokemon Solid', sans-serif;
   margin: 0 0 0.5rem;
   line-height: 1.25;
 }
@@ -927,6 +948,26 @@ a:hover {
   text-align: right !important;
 }
 
+.text-red{
+  color: #FF0000 !important;
+}
+
+.text-university{
+  color: #CC0000 !important;
+}
+
+.text-blue{
+  color: #3B4CCA !important;
+}
+
+.text-golden{
+  color: #FFDE00 !important;
+}
+
+.text-foil{
+  color: #B3A125 !important;
+}
+
 .text-primary {
   color: #2d3e50 !important;
 }
@@ -964,6 +1005,39 @@ a:hover {
 }
 
 /* BACKGROUND UTILS */
+
+#border-golden {
+  border: #FFDE00;
+  border-width: thick;
+  border-style: inset;
+}
+
+#border-red {
+  border: #FF0000;
+  border-width: thick;
+  border-style: inset;
+}
+
+.bg-red{
+  background-color: #FF0000 !important;
+}
+
+.bg-university{
+  background-color: #CC0000 !important;
+}
+
+.bg-blue{
+  background-color: #3B4CCA !important;
+}
+
+.bg-golden{
+  background-color: #FFDE00 !important;
+}
+
+.bg-foil{
+  background-color: #B3A125 !important;
+}
+
 .bg-primary {
   background-color: #2d3e50 !important;
 }
@@ -1233,10 +1307,10 @@ label form [type='radio'] {
 .flex-column {
   margin: 0;
   padding: 0;
-  background: #BAF2F1 ;
-  font-family: Arial, Helvetica, sans-serif;
+  background: black;
+  font-family: 'Pokemon Solid', sans-serif;
   font-size: 14px;
-  color: #414554;
+  color: black;
   
 }
 

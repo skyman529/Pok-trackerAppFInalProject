@@ -7,16 +7,21 @@ const Footer = () => {
   const location = useLocation();
   const navigate = useNavigate();
   return (
-    <footer className="w-100 mt-auto bg-secondary p-4">
+    <footer id="foot" className="w-100 mt-auto bg-blue p-4">
       <div className="container text-center mb-5">
         {location.pathname !== '/' && (
           <button
+            id="pokeCard"
             className="btn btn-dark mb-3"
             onClick={() => navigate(-1)}
           >
             &larr; Go Back
           </button>
         )}
+        <br></br>
+        <br></br>
+        <br></br>
+
         <h4>
           Made with{' '}
           <span

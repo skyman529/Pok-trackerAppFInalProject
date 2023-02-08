@@ -73,5 +73,7 @@
 }
 
 .pill {
+    font-family: sans-serif;
+    font-size: 15px !important;
     margin-right: 5px !important;
 }
