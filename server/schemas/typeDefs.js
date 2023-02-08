@@ -17,7 +17,6 @@ const typeDefs = gql`
     image: String
     pokeUser: String
     shiny: Boolean
-    comments: [Comment]!
   }
 
   type PokemonData {
@@ -26,13 +25,6 @@ const typeDefs = gql`
     pokeName: String
     pokeType: [String]
     image: String
-  }
-
-  type Comment {
-    _id: ID
-    commentText: String
-    commentAuthor: String
-    createdAt: String
   }
 
   type Auth {
@@ -54,9 +46,7 @@ const typeDefs = gql`
     addUser(username: String!, email: String!, password: String!): Auth
     login(email: String!, password: String!): Auth
     addPokemon(number: Int!, pokeName: String!, pokeType: [String]!, image: String!,  shiny: Boolean!): Pokemon
-    addComment(pokemonId: ID!, commentText: String!): Pokemon
     removePokemon(pokemonId: ID!): Pokemon
-    removeComment(pokemonId: ID!, commentId: ID!): Pokemon
   }
 `;
 

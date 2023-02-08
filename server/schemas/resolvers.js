@@ -74,23 +74,6 @@ const resolvers = {
       }
       throw new AuthenticationError('You need to be logged in!');
     },
-    addComment: async (parent, { pokemonId, commentText }, context) => {
-      if (context.user) {
-        return Pokemon.findOneAndUpdate(
-          { _id: pokemonId },
-          {
-            $addToSet: {
-              comments: { commentText, commentAuthor: context.user.username },
-            },
-          },
-          {
-            new: true,
-            runValidators: true,
-          }
-        );
-      }
-      throw new AuthenticationError('You need to be logged in!');
-    },
     removePokemon: async (parent, { pokemonId }, context) => {
       if (context.user) {
         const pokemon = await Pokemon.findOneAndDelete({
@@ -104,23 +87,6 @@ const resolvers = {
         );
 
         return pokemon;
-      }
-      throw new AuthenticationError('You need to be logged in!');
-    },
-    removeComment: async (parent, { pokemonId, commentId }, context) => {
-      if (context.user) {
-        return Pokemon.findOneAndUpdate(
-          { _id: pokemonId },
-          {
-            $pull: {
-              comments: {
-                _id: commentId,
-                commentAuthor: context.user.username,
-              },
-            },
-          },
-          { new: true }
-        );
       }
       throw new AuthenticationError('You need to be logged in!');
     },

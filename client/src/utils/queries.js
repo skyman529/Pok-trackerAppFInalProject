@@ -58,12 +58,6 @@ export const QUERY_SINGLE_POKEMON = gql`
       image
       pokeUser
       shiny
-      comments {
-        _id
-        commentText
-        commentAuthor
-        createdAt
-      }
     }
   }
 `;

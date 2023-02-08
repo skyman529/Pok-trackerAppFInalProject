@@ -34,29 +34,6 @@ export const ADD_POKEMON = gql`
       image
       pokeUser
       shiny
-      comments {
-        _id
-        commentText
-      }
-    }
-  }
-`;
-
-export const ADD_COMMENT = gql`
-  mutation addComment($pokemonId: ID!, $commentText: String!) {
-    addComment(pokemonId: $pokemonId, commentText: $commentText) {
-      _id
-      number
-      pokeName
-      pokeType
-      image
-      pokeUser
-      shiny
-      comments {
-        _id
-        commentText
-        createdAt
-      }
     }
   }
 `;
