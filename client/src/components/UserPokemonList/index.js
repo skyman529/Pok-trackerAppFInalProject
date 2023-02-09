@@ -25,25 +25,24 @@ const UserPokemonList = ({
         {pokemons &&
           pokemons.map((pokemon) => (
             <Col key={pokemon._id}>
-              <Card style={{ width: '18rem' }}>
-
+              <Card style={{ width: '18rem' }} id="border-red">
+                {pokemon.shiny === true ? (
+                  <Card.Text id='shiny' className="pt-3 bg-golden">S H I N Y</Card.Text>
+                ) : (
+                  <Card.Text id='shiny' className="pt-3 bg-red">P O K É M O N</Card.Text>
+                )}
+                <Card.Text id='pokeCard' className="px-2">{pokemon.number}</Card.Text>
                 {pokemon.shiny === true ? (
                   <Card.Img variant="top" src={`images/pokemon_sprites/shiny/${pokemon.number}.png`} />
                 ) : (
                   <Card.Img variant="top" src={`images/pokemon_sprites/${pokemon.number}.png`} />
                 )}
                 <Card.Body>
-                  <Card.Text id='pokeCard'>{pokemon.number}</Card.Text>
-                  <Card.Title id='pokeCard'>{pokemon.pokeName}</Card.Title>
+                  <Card.Title id='pokeCenter' className='cardTitle text-blue py-2'>{pokemon.pokeName}</Card.Title>
                   <Badges
                     _id={pokemon._id}
                     pokeType={pokemon.pokeType}
                   ></Badges>
-                  {pokemon.shiny === true ? (
-                    <Card.Text id='pokeCard'>SHINY</Card.Text>
-                  ) : (
-                    <br></br>
-                  )}
                 </Card.Body>
               </Card>
             </Col>

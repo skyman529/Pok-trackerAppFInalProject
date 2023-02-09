@@ -10,22 +10,25 @@ const Header = () => {
     Auth.logout();
   };
   return (
-    <header className="bg-primary text-light mb-4 py-3 flex-row align-center" id='header'>
+    <header className="bg-blue text-light mb-4 py-3 flex-row align-center" id='header'>
       <div className="container flex-row justify-space-between-lg justify-center align-center">
         <div>
-            <h1 className="m-0" id='pokeball'>
-              <img src={pokemon} alt="Pokemon Logo"/>
-            </h1>
+          <h1 className="m-0" id='pokeball'>
+            <img src={pokemon} alt="Pokemon Logo" />
+          </h1>
           <p className="m-0" id="title">Track Your Collection and Catch Em All!</p>
         </div>
         <div>
           {Auth.loggedIn() ? (
             <>
-              <Link className="btn btn-lg  m-2" to="/me">
-                {Auth.getProfile().data.username}'s profile
+              <Link className="btn btn-lg  m-2" to="/">
+                <div className="navigation">Home</div>
               </Link>
-              <button className="btn btn-lg  m-2" onClick={logout}>
-                Logout
+              <Link className="btn btn-lg  m-2" to="/me">
+                <div className="navigation">{Auth.getProfile().data.username}'s profile</div>
+              </Link>
+              <button className="navigation btn btn-lg  m-2" onClick={logout}>
+                <div className="navigation">Logout</div>
               </button>
             </>
           ) : (

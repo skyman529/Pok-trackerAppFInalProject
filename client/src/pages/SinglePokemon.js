@@ -5,31 +5,29 @@ import { useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 
 import PokemonCard from '../components/PokemonCard/index'
-
-import { QUERY_SINGLE_POKEMON_DATA } from '../utils/queries';
+import { QUERY_SINGLE_POKEMON } from '../utils/queries';
 
 const SinglePoke = () => {
   // Use `useParams()` to retrieve value of the route parameter `:profileId`
-  const { pokemondataId } = useParams();
+  const { pokemonId } = useParams();
 
-  const { loading, data } = useQuery(QUERY_SINGLE_POKEMON_DATA, {
+  const { loading, data } = useQuery(QUERY_SINGLE_POKEMON, {
     // pass URL parameter
-    variables: { pokemondataId: pokemondataId },
+    variables: { pokemonId: pokemonId },
   });
 
-  const pokemondata = data?.pokemondata || {};
+  const pokemon = data?.pokemon || {};
 
   if (loading) {
     return <div>Loading...</div>;
   }
   return (
     <div>
-      < PokemonCard
-        _id={pokemondata._id} 
-        number={pokemondata.number}
-        pokeName={pokemondata.name}
-        pokeType={pokemondata.pokeType}
-        image={pokemondata.image}
+      < PokemonCard 
+        number={pokemon.number}
+        name={pokemon.name}
+        type={pokemon.pokeType}
+        image={pokemon.image}
       />
     </div>
   );
