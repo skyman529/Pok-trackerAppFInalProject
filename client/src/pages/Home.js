@@ -7,7 +7,7 @@ import { QUERY_POKEMONS_DATA } from '../utils/queries';
 
 const Home = () => {
   const { loading, data } = useQuery(QUERY_POKEMONS_DATA);
-  const pokemons = data?.pokemondatas || [];
+  const pokemondatas = data?.pokemondatas || [];
   // console.log(pokemons);
 
   return (
@@ -17,7 +17,7 @@ const Home = () => {
           <div>Loading...</div>
         ) : (
           <PokemonList
-            pokemons={pokemons}
+            pokemondatas={pokemondatas}
           />
         )}
       </div>

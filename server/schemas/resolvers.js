@@ -67,7 +67,7 @@ const resolvers = {
 
         await User.findOneAndUpdate(
           { _id: context.user._id },
-          { $addToSet: { pokemons: pokemon.name } }
+          { $addToSet: { pokemons: pokemon._id } }
         );
 
         return pokemon;

@@ -11,9 +11,9 @@ import Auth from '../../utils/auth';
 import { Col, Row, Card, Form, Button } from 'react-bootstrap';
 
 
-const PokemonList = ({ pokemons }) => {
-  if (pokemons) {
-    console.log(pokemons);
+const PokemonList = ({ pokemondatas }) => {
+  if (pokemondatas) {
+    console.log(pokemondatas);
   }
 
   return (
@@ -21,16 +21,16 @@ const PokemonList = ({ pokemons }) => {
       {Auth.loggedIn() ? (
         <>
           <Row className="g-4 justify-content-md-center">
-            {pokemons &&
-              pokemons.map((pokemon) => (
-                <Col key={pokemon._id}>
+            {pokemondatas &&
+              pokemondatas.map((pokemondata) => (
+                <Col key={pokemondata._id}>
                   <PokemonCard
-                    key={pokemon._id}
-                    number={pokemon.number}
-                    pokeName={pokemon.pokeName}
-                    pokeType={pokemon.pokeType}
-                    image={pokemon.image}
-                    _id={pokemon._id}
+                    key={pokemondata._id}
+                    number={pokemondata.number}
+                    pokeName={pokemondata.pokeName}
+                    pokeType={pokemondata.pokeType}
+                    image={pokemondata.image}
+                    _id={pokemondata._id}
                   />
                 </Col>
               ))}
