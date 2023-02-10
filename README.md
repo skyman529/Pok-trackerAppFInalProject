@@ -90,12 +90,16 @@ npm run develop
 
 ## Link To Deploy Site
 ---
-
+https://poketrakerapp.herokuapp.com/
 ## Mock-Up
 ---
-* The user is presentated with the abilty to create an account 
+* The user is presentated with the login page
 
-![sign up page](./client/public/images/mock-up.png)
+![sign up page](./client/public/images/loginpage.png)
+
+* The user is presentated with the sign up page
+
+![sign up page](./client/public/images/signuppage.png)
 
 
 
