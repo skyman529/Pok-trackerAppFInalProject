@@ -25,8 +25,11 @@ const PokemonCard = ({
 
     // console.log(number);
 
-    const { loading, data } = useQuery(QUERY_POKEMONS);
+    const { data } = useQuery(QUERY_POKEMONS);
     const pokemons = data?.pokemons || [];
+
+    const { data2 } = useQuery(QUERY_ME);
+    const me = data2?.me || [];
 
     const [addPokemon, { error }] = useMutation(ADD_POKEMON, {
         update(cache, { data: { addPokemon } }) {
